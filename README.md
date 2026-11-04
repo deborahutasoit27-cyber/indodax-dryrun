@@ -183,6 +183,9 @@ LOCAL_STORE_FILE=data/test-store.json node scripts/dryrun_local.js
 
 Tidak ada dependensi npm. Tidak ada build step.
 
+> Jika PowerShell memblokir `npm` (execution policy), pakai `npm.cmd test`, atau
+> langsung `node --test tests/strategy.test.js` dan `node scripts/*.js`.
+
 ---
 
 ## 8. Deploy ke Vercel
