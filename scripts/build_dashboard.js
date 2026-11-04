@@ -360,6 +360,8 @@ function renderForward(){
     \${card("Trade",NUM(f.trades.sells,0),"tertutup")}
     \${card("Profit Factor",f.profitFactor===null?"n/a":NUM(f.profitFactor),"")}
     \${card("Win Rate",PCT(f.winRatePct,1),"")}
+    \${card("Avg Win",RP(f.avgWin),"per trade menang","pos")}
+    \${card("Avg Loss",RP(f.avgLoss),"per trade rugi","neg")}
     \${card("Biaya / Laba Kotor",f.costs.costSharePct===null?"n/a":PCT(f.costs.costSharePct,1),"")}
   </div>
   <div style="margin-top:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px">
@@ -494,6 +496,10 @@ function renderLog(){
   <div class="row">
     <button class="ghost" onclick="unduh('backtest_full.json', DATA.backtest)">Unduh backtest_full.json</button>
     <button class="ghost" onclick="unduh('trades.csv', buatCsv(DATA.backtest.trades))">Unduh trades.csv</button>
+    \${f?'<button class="ghost" onclick="unduh(\\'orders.csv\\', buatCsv(DATA.forwardLogs.logs.order||[]))">Unduh orders.csv</button>':""}
+    \${f?'<button class="ghost" onclick="unduh(\\'equity.csv\\', buatCsv(DATA.forwardLogs.logs.equity||[]))">Unduh equity.csv</button>':""}
+    \${f?'<button class="ghost" onclick="unduh(\\'errors.csv\\', buatCsv(DATA.forwardLogs.logs.error||[]))">Unduh errors.csv</button>':""}
+    \${f?'<button class="ghost" onclick="unduh(\\'snapshots.csv\\', buatCsv(DATA.forwardLogs.logs.snapshot||[]))">Unduh snapshots.csv</button>':""}
     \${f?'<button class="ghost" onclick="unduh(\\'forward_logs.json\\', {exportedAt:DATA.forwardLogs.exportedAt,counts:DATA.forwardLogs.counts,logs:DATA.forwardLogs.logs,state:DATA.forwardLogs.state})">Unduh forward_logs.json</button>':""}
   </div>
   <h3>Isi log</h3>
