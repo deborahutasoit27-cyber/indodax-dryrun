@@ -1,0 +1,82 @@
+{
+  "collectedAt": "2026-11-04T03:42:38.612Z",
+  "shotsPerPair": 20,
+  "sizes": [
+    1000000,
+    5000000,
+    10000000,
+    25000000
+  ],
+  "summary": {
+    "BTCIDR": {
+      "snapshots": 20,
+      "valid": 20,
+      "medianSpreadPct": 0.0000722801607944457,
+      "medianBuySlipPct": {
+        "1000000": 0.00003614008039722285,
+        "5000000": 0.00003614008039722285,
+        "10000000": 0.00003614008039722285,
+        "25000000": 0.00003614008039722285
+      },
+      "medianSellSlipPct": 0.00003614008039722285,
+      "medianAskLevels": 150,
+      "medianBidLevels": 150
+    },
+    "ETHIDR": {
+      "snapshots": 20,
+      "valid": 20,
+      "medianSpreadPct": 0.0369183516639736,
+      "medianBuySlipPct": {
+        "1000000": 0.0184591758319868,
+        "5000000": 0.0184591758319868,
+        "10000000": 0.0184591758319868,
+        "25000000": 0.0184591758319868
+      },
+      "medianSellSlipPct": 0.08992651036704416,
+      "medianAskLevels": 150,
+      "medianBidLevels": 150
+    },
+    "DOGEIDR": {
+      "snapshots": 20,
+      "valid": 20,
+      "medianSpreadPct": 0.07538635506973237,
+      "medianBuySlipPct": {
+        "1000000": 0.03769317753486619,
+        "5000000": 0.03769317753486619,
+        "10000000": 0.03769317753486619,
+        "25000000": 0.03769317753486619
+      },
+      "medianSellSlipPct": 0.18776599317552534,
+      "medianAskLevels": 150,
+      "medianBidLevels": 150
+    },
+    "ADAIDR": {
+      "snapshots": 20,
+      "valid": 20,
+      "medianSpreadPct": 0.20873714030117788,
+      "medianBuySlipPct": {
+        "1000000": 0.10436857015058894,
+        "5000000": 0.10436857015058894,
+        "10000000": 0.10436857015058894,
+        "25000000": 0.10436857015058894
+      },
+      "medianSellSlipPct": 0.2330441394495714,
+      "medianAskLevels": 150,
+      "medianBidLevels": 150
+    },
+    "BNBIDR": {
+      "snapshots": 20,
+      "valid": 20,
+      "medianSpreadPct": 0.7087505643627552,
+      "medianBuySlipPct": {
+        "1000000": 0.3543887332056381,
+        "5000000": 0.35439083356644596,
+        "10000000": 0.35439109611154596,
+        "25000000": 0.35439125363861795
+      },
+      "medianSellSlipPct": 0.3543853566603731,
+      "medianAskLevels": 150,
+      "medianBidLevels": 150
+    }
+  }
+}

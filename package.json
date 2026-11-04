@@ -1,0 +1,20 @@
+{
+  "name": "indodax-dryrun-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bot dry run Indodax (UAS Algorithmic Trading) — long-only, tanpa API key",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "select-universe": "node scripts/select_universe.js",
+    "collect": "node scripts/collect_history.js",
+    "snapshots": "node scripts/collect_snapshots.js",
+    "backtest": "node scripts/backtest.js",
+    "tick:local": "node scripts/dryrun_local.js",
+    "recompute": "node scripts/recompute.js",
+    "dashboard": "node scripts/build_dashboard.js",
+    "verify": "node scripts/verify_all.js",
+    "test": "node --test tests/strategy.test.js",
+    "all": "npm test && npm run backtest && npm run dashboard && npm run verify"
+  }
+}

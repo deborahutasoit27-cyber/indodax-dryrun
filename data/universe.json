@@ -1,0 +1,64 @@
+{
+  "generatedAt": "2026-11-04T03:38:20.588Z",
+  "criteria": {
+    "quote": "IDR",
+    "excluded": "stablecoin dan token saham (berakhiran X)",
+    "liquidityMeasuredAt": "2023-11-05T00:00:00.000Z",
+    "minMedianHourlyIdr": 10000000,
+    "minCompleteness": 0.9,
+    "target": 5,
+    "note": "Likuiditas diukur pada 30 hari pertama periode backtest, bukan hari ini."
+  },
+  "universe": [
+    {
+      "id": "btcidr",
+      "symbol": "BTCIDR",
+      "description": "BTC/IDR",
+      "medianHourlyIdrAtStart": 631713088,
+      "completeness": 1,
+      "quantityIncrement": 1e-8,
+      "minBaseCurrency": 10000,
+      "feeTakerPct": 0.2
+    },
+    {
+      "id": "ethidr",
+      "symbol": "ETHIDR",
+      "description": "ETH/IDR",
+      "medianHourlyIdrAtStart": 214548623,
+      "completeness": 1,
+      "quantityIncrement": 1e-8,
+      "minBaseCurrency": 10000,
+      "feeTakerPct": 0.2
+    },
+    {
+      "id": "dogeidr",
+      "symbol": "DOGEIDR",
+      "description": "DOGE/IDR",
+      "medianHourlyIdrAtStart": 121351243,
+      "completeness": 1,
+      "quantityIncrement": 1e-8,
+      "minBaseCurrency": 10000,
+      "feeTakerPct": 0.2
+    },
+    {
+      "id": "adaidr",
+      "symbol": "ADAIDR",
+      "description": "ADA/IDR",
+      "medianHourlyIdrAtStart": 74838588,
+      "completeness": 1,
+      "quantityIncrement": 1e-8,
+      "minBaseCurrency": 10000,
+      "feeTakerPct": 0.2
+    },
+    {
+      "id": "bnbidr",
+      "symbol": "BNBIDR",
+      "description": "BNB/IDR",
+      "medianHourlyIdrAtStart": 39222583,
+      "completeness": 1,
+      "quantityIncrement": 1e-8,
+      "minBaseCurrency": 10000,
+      "feeTakerPct": 0.2
+    }
+  ]
+}
