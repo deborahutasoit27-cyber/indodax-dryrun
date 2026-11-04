@@ -1,0 +1,14 @@
+{
+  "commit": "0aed4df7a2d656c14a9d5ae6de4cefc71ac306b7",
+  "commitShort": "0aed4df",
+  "timeWib": "2026-11-04 10:54:25 +07:00",
+  "timeUtc": "2026-11-04T03:54:25Z",
+  "branch": "main",
+  "files": 44,
+  "note": "Commit terakhir yang mengubah aturan/kode strategi. Dibuat sebelum jadwal forward test (4 Nov 2026 12.00 WIB). Setelah commit ini tidak ada perubahan aturan; forward test berjalan dengan versi ini.",
+  "forwardTest": {
+    "startWib": "2026-11-04 12:00:00 +07:00",
+    "endWib": "2026-11-14 12:00:00 +07:00",
+    "durationDays": 10
+  }
+}
