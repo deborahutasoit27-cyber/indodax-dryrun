@@ -319,3 +319,6 @@ Bukti freeze dapat dicek dari `git log` (repo publik) atau folder `.git` di dala
 - Forward test memakai order book nyata, jadi selisih dengan backtest adalah bagian dari
   hasil, bukan kesalahan yang disembunyikan.
 - Hasil masa lalu tidak menjamin masa depan. Bot ini **dry run**: tidak ada uang sungguhan.
+
+Repo publik: https://github.com/deborahutasoit27-cyber/indodax-dryrun  (commit freeze: 0aed4df)  
+
