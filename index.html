@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UAS Algorithmic Trading — Bot Dry Run Indodax (Live)</title>
+<style>
+:root{--bg:#0b1020;--panel:#121a33;--panel2:#18213f;--line:#25305a;--txt:#e8edf7;--muted:#93a0c2;--acc:#4f8cff;--ok:#25c281;--warn:#f2b544;--bad:#ef5b6b;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#080d1a,#0b1020 40%);color:var(--txt);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{padding:26px 24px 18px;border-bottom:1px solid var(--line);background:rgba(10,15,30,.7);position:sticky;top:0;z-index:10;backdrop-filter:blur(8px)}
+h1{margin:0 0 6px;font-size:22px;letter-spacing:-.3px}
+h2{font-size:18px;margin:26px 0 4px}
+h3{font-size:14px;margin:18px 0 8px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 70px}
+.sub{color:var(--muted);font-size:13px}
+.badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.03em;border:1px solid var(--line);background:var(--panel2);color:var(--muted)}
+.badge.ok{color:#0a1a12;background:var(--ok);border-color:var(--ok)}
+.badge.warn{color:#2a1d00;background:var(--warn);border-color:var(--warn)}
+.badge.bad{color:#2a0007;background:var(--bad);border-color:var(--bad)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px;padding:16px}
+.card .k{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;margin-bottom:6px}
+.card .v{font-size:24px;font-weight:750;letter-spacing:-.6px}
+.card .n{font-size:12px;color:var(--muted);margin-top:4px}
+.pos{color:var(--ok)}.neg{color:var(--bad)}.warnc{color:var(--warn)}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:right;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+tbody tr:hover{background:rgba(79,140,255,.06)}
+.mono{font-family:var(--mono);font-size:12px}
+.note{border-radius:10px;padding:12px 14px;font-size:13px;margin:14px 0;border:1px solid rgba(79,140,255,.3);border-left:4px solid var(--acc);background:rgba(79,140,255,.08);color:#cfe0ff}
+.note.bad{background:rgba(239,91,107,.08);border-color:rgba(239,91,107,.35);border-left-color:var(--bad);color:#ffd6db}
+.note.warn{background:rgba(242,181,68,.08);border-color:rgba(242,181,68,.35);border-left-color:var(--warn);color:#ffe9bd}
+.note.ok{background:rgba(37,194,129,.08);border-color:rgba(37,194,129,.35);border-left-color:var(--ok);color:#c8ffe6}
+button.act{background:var(--acc);border:0;color:#fff;padding:9px 16px;border-radius:9px;font-weight:700;cursor:pointer}
+input[type=password],input[type=text]{background:#070b16;border:1px solid var(--line);color:var(--txt);padding:9px 12px;border-radius:9px;font-size:14px;min-width:230px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--warn);margin-right:6px}
+.dot.live{background:var(--ok)}
+.dot.dead{background:var(--bad)}
+footer{color:var(--muted);font-size:12px;padding:26px 20px;border-top:1px solid var(--line);text-align:center;margin-top:40px}
+a{color:var(--acc);text-decoration:none}
+.masked .val{filter:blur(5px);user-select:none}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-top:12px;background:var(--panel)}
+summary{cursor:pointer;font-weight:600}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="padding-bottom:0">
+    <h1>Bot Dry Run Indodax <span class="badge">DRY-RUN · TANPA UANG ASLI</span></h1>
+    <div class="sub row">
+      <span class="badge ok">Strategi: crypto-donchian-1.0.0 (TIDAK diubah)</span>
+      <span class="badge">Timeframe 1 jam · long-only</span>
+      <span class="badge">Fee taker 0,30% · min order Rp25.000</span>
+      <a href="/dashboard.html">→ Dashboard lengkap (backtest &amp; audit) /dashboard.html</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="note" id="bannerTop">
+    Halaman ini menampilkan <b>data pasar publik Indodax</b> untuk 5 pair universe bot dan status bot dry run.
+    Data pasar berasal langsung dari API publik Indodax (<span class="mono">/api/ticker_all</span>), disajikan lewat
+    endpoint server <span class="mono">/api/market</span>. Panel kas/posisi virtual bot dilindungi <b>kunci dashboard</b>.
+  </div>
+
+  <h2>Pasar Indodax — Live (5 pair universe)</h2>
+  <div class="sub row" id="marketMeta">
+    <span><span class="dot" id="dotMarket"></span><span id="marketState">memuat…</span></span>
+    <span id="refreshCountdown" class="mono"></span>
+    <button class="act" id="btnRefresh" style="padding:5px 12px;font-size:12px">Segarkan</button>
+  </div>
+
+  <div class="note warn" id="staleNote" style="display:none"></div>
+
+  <div style="border:1px solid var(--line);border-radius:12px;overflow-x:auto;margin-top:10px">
+    <table id="tblMarket">
+      <thead>
+        <tr>
+          <th>Pair</th><th>Harga (IDR)</th><th>Perubahan 24 j</th><th>Bid</th><th>Ask</th>
+          <th>Spread</th><th>Volume 24 j (IDR)</th><th>Waktu sumber (WIB)</th><th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody><tr><td colspan="9" class="sub" style="text-align:left">Memuat data pasar…</td></tr></tbody>
+    </table>
+  </div>
+  <p class="sub" style="font-size:12px">
+    Likuiditas universe diukur pada <b>awal periode backtest (November 2023)</b>, bukan hari ini — sesuai aturan soal.
+    Baris peringatan merah pada kolom terakhir berarti data terdeteksi bermasalah (harga kosong, spread &gt; 2%, dsb) sesuai
+    ketentuan validasi data.
+  </p>
+
+  <h2>Ringkasan Bot Dry Run <span class="badge warn">terkunci dengan kunci dashboard</span></h2>
+  <div class="note warn" id="lockNote">
+    Kas dan posisi <b>virtual</b> bot disembunyikan dari pengunjung. Masukkan <b>kunci dashboard</b> (sama dengan
+    <span class="mono">CRON_SECRET</span> penjadwal) untuk membukanya. Kunci hanya dipakai di memori halaman ini,
+    tidak disimpan di browser.
+  </div>
+
+  <div class="row" id="keyRow">
+    <input type="password" id="keyInput" placeholder="Kunci dashboard (CRON_SECRET)" autocomplete="off">
+    <button class="act" id="btnUnlock">Buka panel bot</button>
+    <button class="act" id="btnUnlockRefresh" style="display:none;background:#25305a">Muat ulang status</button>
+  </div>
+  <p class="sub" id="keyMsg" style="min-height:18px"></p>
+
+  <div id="botPanel" class="masked">
+    <div class="grid" id="botCards">
+      <div class="card"><div class="k">Kas virtual (IDR)</div><div class="v val">—</div></div>
+      <div class="card"><div class="k">Equity saat ini (IDR)</div><div class="v val">—</div></div>
+      <div class="card"><div class="k">Posisi terbuka</div><div class="v val">—</div></div>
+      <div class="card"><div class="k">Tick diterima</div><div class="v val">—</div></div>
+    </div>
+
+    <div class="note" id="forwardNote" style="background:rgba(242,181,68,.08);border-color:rgba(242,181,68,.35);border-left-color:var(--warn);color:#ffe9bd">
+      Status uji forward: belum dimuat.
+    </div>
+
+    <h3>Posisi terbuka (virtual)</h3>
+    <div style="border:1px solid var(--line);border-radius:12px;overflow-x:auto">
+      <table id="tblPos">
+        <thead><tr><th>Pair</th><th>Qty</th><th>Harga masuk</th><th>Mark price</th><th>Nilai (IDR)</th><th>P/L riil %</th><th>Dibuka (WIB)</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h3>Order terakhir (5 terbaru)</h3>
+    <div style="border:1px solid var(--line);border-radius:12px;overflow-x:auto">
+      <table id="tblOrders">
+        <thead><tr><th>Waktu (WIB)</th><th>Pair</th><th>Sisi</th><th>Qty</th><th>Harga</th><th>Nilai (IDR)</th><th>Fee (IDR)</th><th>Terjadi pada</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <details id="opsDetails">
+      <summary>Operasional — error API, log penolakan, kill switch, trade tertutup</summary>
+      <div id="opsBody" class="mono" style="margin-top:10px;font-size:12px"></div>
+    </details>
+  </div>
+
+  <footer>
+    Sumber data: API publik Indodax (tanpa API key) · eksekusi bot memakai order book sungguhan (bid/ask), bukan mid/close ·<br>
+    dry-run penuh, tidak ada transaksi uang asli · semua angka rekap dapat dihitung ulang dari log mentah (<span class="mono">/api/export</span>).
+  </footer>
+</div>
+
+<script>
+const REFRESH_MS = 30000;
+let countdownT = REFRESH_MS;
+let key = null;
+
+const fmtIDR = n => n == null ? "—" : new Intl.NumberFormat("id-ID", { maximumFractionDigits: 0 }).format(Math.round(n));
+const fmtNum = (n, d) => n == null ? "—" : new Intl.NumberFormat("id-ID", { maximumFractionDigits: d }).format(n);
+const fmtPct = n => n == null ? "—" : (n >= 0 ? "+" : "") + n.toFixed(2) + "%";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+// ---------- pasar ----------
+async function loadMarket() {
+  const dot = document.getElementById("dotMarket");
+  const stateEl = document.getElementById("marketState");
+  const staleNote = document.getElementById("staleNote");
+  try {
+    const r = await fetch("/api/market?_=" + Date.now());
+    const j = await r.json();
+    if (!r.ok || !j.ok) throw new Error(j.error || "HTTP " + r.status);
+    renderMarket(j);
+    staleNote.style.display = j.stale ? "block" : "none";
+    if (j.stale) staleNote.textContent = "Data disajikan dari snapshot terakhir (STALE). Alasan: " + (j.error || "tidak diketahui");
+    dot.className = "dot live";
+    stateEl.textContent = "live · sumber waktu " + (j.serverTimeWib || "—") +
+      (j.cached ? " (cache " + j.cacheAgeSec + " dtk)" : "");
+  } catch (e) {
+    dot.className = "dot dead";
+    stateEl.textContent = "gagal memuat (" + e.message + ")";
+    staleNote.style.display = "block";
+    staleNote.textContent = "Tidak dapat menghubungi /api/market: " + e.message;
+  }
+}
+
+function renderMarket(j) {
+  const tb = document.querySelector("#tblMarket tbody");
+  tb.innerHTML = (j.pairs || []).map(p => {
+    if (p.missing) return `<tr><td colspan="9" style="text-align:left">${esc(p.pair)} tidak ditemukan di API (dihitung sebagai penolakan data)</td></tr>`;
+    const ch = p.change24hPct;
+    const bad = (p.issues || []).length > 0;
+    return `<tr>
+      <td><b>${esc(p.pair)}</b></td>
+      <td class="mono">${fmtIDR(p.last)}</td>
+      <td class="mono ${ch > 0 ? "pos" : ch < 0 ? "neg" : ""}">${fmtPct(ch)}</td>
+      <td class="mono">${fmtIDR(p.bid)}</td>
+      <td class="mono">${fmtIDR(p.ask)}</td>
+      <td class="mono ${p.spreadPct > 2 ? "neg" : ""}">${p.spreadPct == null ? "—" : p.spreadPct.toFixed(4) + "%"}</td>
+      <td class="mono">${fmtIDR(p.volumeQuote)}</td>
+      <td class="mono">${esc(p.sourceTime)}</td>
+      <td>${bad ? `<span class="badge bad" title="${esc((p.issues || []).join("; "))}">${esc((p.issues || [])[0] || "issue")}</span>` : '<span class="badge ok">OK</span>'}</td>
+    </tr>`;
+  }).join("");
+}
+
+// struktur waktu refresh
+setInterval(() => {
+  countdownT -= 1000;
+  if (countdownT <= 0) { countdownT = REFRESH_MS; if (!document.hidden) loadMarket(); }
+  document.getElementById("refreshCountdown").textContent =
+    "refresh berikutnya " + Math.max(0, Math.ceil(countdownT / 1000)) + " dtk";
+}, 1000);
+document.getElementById("btnRefresh").onclick = () => { countdownT = REFRESH_MS; loadMarket(); };
+
+// ---------- panel bot ----------
+async function loadStatus() {
+  if (!key) return;
+  const msg = document.getElementById("keyMsg");
+  try {
+    const r = await fetch("/api/status?_=" + Date.now(), { headers: { Authorization: "Bearer " + key } });
+    const j = await r.json();
+    if (r.status === 401) { msg.textContent = "Kunci salah — akses ditolak (401)."; key = null; return; }
+    if (!r.ok || !j.ok) { msg.textContent = "Gagal memuat status (" + (j.error || r.status) + ")."; return; }
+    msg.textContent = "Status termuat " + new Date().toLocaleTimeString("id-ID") + " · data dari " + (j.stored || "storage");
+    renderStatus(j);
+  } catch (e) {
+    msg.textContent = "Gagal memuat status: " + e.message;
+  }
+}
+
+function renderStatus(j) {
+  document.getElementById("botPanel").classList.remove("masked");
+  document.getElementById("lockNote").style.display = "none";
+  document.getElementById("btnUnlockRefresh").style.display = "";
+
+  const eq = j.state?.live?.equityIdr;
+  const cash = j.state?.live?.cashIdr;
+  const nPos = j.state?.live?.openPairCount ?? 0;
+  const cards = document.querySelectorAll("#botCards .card .v");
+  cards[0].textContent = fmtIDR(cash);
+  cards[1].textContent = fmtIDR(eq);
+  cards[2].textContent = fmtIDR(nPos);
+  cards[3].textContent = fmtIDR(j.state?.tickCount ?? 0);
+
+  const f = j.forward || {};
+  const cov = f.coverageHours ? f.coverageHours.toFixed(1) + " dari " + f.fullWindowHours + " jam" : "0 jam";
+  const state = f.firstTickUnix ? (f.activeNow ? "AKTIF" : "SELESAI") : "BELUM BERJALAN";
+  document.getElementById("forwardNote").innerHTML =
+    `<b>Uji forward ${f.windowStartWib} → ${f.windowEndWib}</b> — <b>${state}</b><br>` +
+    `Tick pertama: ${f.firstTickWib ? esc(f.firstTickWib) : "—"} ${f.startedLate ? `(mulai <b>${f.minutesLate} menit terlambat</b>, dihitung apa adanya)` : ""}<br>` +
+    `Cakupan: ${cov} · sisa: ${f.remainingHours ?? "—"} jam<br><span style="font-size:12px">${esc(f.note || "")}</span>`;
+
+  const ptb = document.querySelector("#tblPos tbody");
+  const pos = j.state?.live?.openPositions || [];
+  ptb.innerHTML = pos.length ? pos.map(p => `<tr>
+    <td><b>${esc(p.pair)}</b></td><td class="mono">${fmtNum(p.qty, 8)}</td>
+    <td class="mono">${fmtIDR(p.entryPrice)}</td><td class="mono">${fmtIDR(p.markPrice)}</td>
+    <td class="mono">${fmtIDR(p.markValue)}</td>
+    <td class="mono ${p.unrealizedPct > 0 ? "pos" : p.unrealizedPct < 0 ? "neg" : ""}">${fmtPct(p.unrealizedPct)}</td>
+    <td class="mono">${esc(p.openedAtWib || "—")}</td></tr>`).join("")
+    : `<tr><td colspan="7" class="sub" style="text-align:left">Tidak ada posisi terbuka${f.firstTickUnix ? "" : " (bot belum pernah berjalan)"}</td></tr>`;
+
+  const otb = document.querySelector("#tblOrders tbody");
+  const orders = j.logs?.lastOrders || [];
+  otb.innerHTML = orders.length ? orders.map(o =>
+    `<tr><td class="mono">${esc(wibFromIso(o.loggedAt))}</td><td><b>${esc(o.pair)}</b></td>
+     <td class="${o.side === "BUY" ? "pos" : "neg"}">${esc(o.side)}</td>
+     <td class="mono">${fmtNum(o.qty, 8)}</td><td class="mono">${fmtIDR(o.avgPrice)}</td>
+     <td class="mono">${fmtIDR(o.notional)}</td><td class="mono">${fmtIDR(o.fee)}</td>
+     <td>${esc(o.reason || "")} ${o.netPnl != null ? `<span class="${o.netPnl > 0 ? "pos" : "neg"}">net ${fmtIDR(o.netPnl)}</span>` : ""}</td></tr>`).join("")
+    : `<tr><td colspan="8" class="sub" style="text-align:left">Belum ada order — bot hanya mencatat evaluasi dan penolakan.</td></tr>`;
+
+  const s = j.stats || {};
+  const o = j.operational || {};
+  document.getElementById("opsBody").innerHTML =
+    `Trade tertutup: <b>${s.closedTrades ?? 0}</b> · win rate: ${s.winRatePct == null ? "—" : s.winRatePct.toFixed(1) + "%"} · total net P/L: <b>${fmtIDR(s.netPnlIdr)}</b><br>` +
+    `Log: tick ${j.logs?.ticks ?? 0} · order ${j.logs?.orders ?? 0} · error ${j.logs?.errors ?? 0} · error API total ${o.apiErrorsTotal ?? 0}<br>` +
+    `Kill switch: <b>${(j.killSwitch?.on || o.killSwitchUsed) ? "PERNAH dipakai / aktif" : "tidak dipakai"}</b><br>` +
+    `Error terakhir: ${j.logs?.lastErrors?.length ? j.logs.lastErrors.map(e => esc(`${new Date(e.loggedAt).toISOString()} ${e.pair || ""} ${e.reason || e.message || e.type} `)).join(" / ") : "tidak ada"}`;
+}
+
+function wibFromIso(iso) {
+  if (!iso) return "—";
+  return iso.replace("T", " ").replace("Z", "").slice(0, 19) + " WIB";
+}
+
+document.getElementById("btnUnlock").onclick = () => {
+  const v = document.getElementById("keyInput").value.trim();
+  if (!v) { document.getElementById("keyMsg").textContent = "Masukkan kunci dulu."; return; }
+  key = v;
+  loadStatus();
+};
+document.getElementById("keyInput").addEventListener("keydown", e => { if (e.key === "Enter") document.getElementById("btnUnlock").click(); });
+document.getElementById("btnUnlockRefresh").onclick = loadStatus;
+
+loadMarket();
+</script>
+</body>
+</html>

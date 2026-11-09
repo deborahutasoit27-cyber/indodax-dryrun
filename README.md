@@ -208,6 +208,18 @@ Tidak ada dependensi npm. Tidak ada build step.
 
 Batas 300 detik per panggilan cukup: satu tick lokal berjalan ±4,9 detik untuk 5 pair.
 
+### Dashboard live (`/`)
+
+Halaman `index.html` disajikan di `/` dan menampilkan:
+
+- **Tabel pasar live** (5 pair universe) — harga, perubahan 24 jam, bid/ask, spread,
+  volume 24 jam, waktu sumber WIB; pembaruan otomatis tiap 30 detik via `GET /api/market`
+  (public, tanpa kunci; hanya data pasar publik).
+- **Panel bot yang terkunci** — kas/posisi virtual disembunyikan; dibuka dengan
+  **kunci dashboard** (= `CRON_SECRET`) lewat `GET /api/status` (tanpa kunci → 401).
+- Strategi/crypto-donchian-1.0.0 tidak diubah oleh tampilan. Setiap angka yang
+  muncul berasal dari log/state yang dapat dihitung ulang (`/api/export`).
+
 ---
 
 ## 9. Forward test 10 hari
