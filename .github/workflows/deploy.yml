@@ -1,0 +1,37 @@
+name: deploy-prod
+
+# Auto-deploy saat pull-push ke main.
+# Keterangan jujur: integrasi Git bawaan Vercel (GitHub App) tidak bisa
+# dihubungkan lewat API/CLI, jadi mekanisme push->deploy ini memakai
+# GitHub Actions dengan token Vercel disimpan sebagai Actions secret.
+# Deploy: unduh semua artefak proyek lalu `vercel deploy --prod`.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Pasang Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Deploy produksi ke Vercel
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npx --yes vercel@latest deploy --prod --yes --token="$VERCEL_TOKEN"
