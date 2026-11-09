@@ -208,6 +208,17 @@ Tidak ada dependensi npm. Tidak ada build step.
 
 Batas 300 detik per panggilan cukup: satu tick lokal berjalan ±4,9 detik untuk 5 pair.
 
+### Auto-deploy (push → produksi)
+
+- Repo publik: `github.com/deborahutasoit27-cyber/indodax-dryrun`.
+- **Push ke `main` otomatis deploy produksi** lewat workflow `.github/workflows/deploy.yml`
+  (GitHub Actions menjalankan `vercel deploy --prod`; token Vercel disimpan sebagai
+  Actions secret `VERCEL_TOKEN`, bukan di kode).
+- Catatan jujur: integrasi Git bawaan Vercel (GitHub App) hanya bisa dihubungkan
+  lewat dashboard; di sini fungsinya (push → deploy otomatis) diterapkan via Actions.
+- Penjadwal jam-an memakai `.github/workflows/tick.yml` (cron `7 * * * *`), dengan
+  secret `BOT_URL` dan `CRON_SECRET`.
+
 ### Dashboard live (`/`)
 
 Halaman `index.html` disajikan di `/` dan menampilkan:
