@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-11-14T13:36:18.971Z",
+  "source": "data/forward_logs.json",
+  "window": {
+    "from": "2026-11-09T13:44:40.000Z",
+    "to": "2026-11-14T11:24:23.000Z",
+    "days": 4.9,
+    "fromWib": "2026-11-09",
+    "toWib": "2026-11-14"
+  },
+  "capital": 100000000,
+  "endEquity": 100000000,
+  "totalReturnPct": 0,
+  "maxDrawdownPct": 0,
+  "maxDrawdownAt": null,
+  "trades": {
+    "buys": 0,
+    "sells": 0,
+    "closed": 0
+  },
+  "winRatePct": 0,
+  "profitFactor": null,
+  "avgWin": 0,
+  "avgLoss": 0,
+  "costs": {
+    "fees": 0,
+    "spread": 0,
+    "slippage": 0,
+    "total": 0,
+    "grossProfitPositive": 0,
+    "costSharePct": null
+  },
+  "operational": {
+    "ticksRecorded": 17,
+    "expectedTicks": 118,
+    "uptimePct": 14.4068,
+    "apiErrors": 0,
+    "killSwitchUsed": 0,
+    "killSwitchActive": false,
+    "errorRows": 0,
+    "snapshots": 95,
+    "tickRows": 19
+  },
+  "benchmark": {
+    "pair": "BTCIDR",
+    "totalReturnPct": -9.1057,
+    "maxDrawdownPct": -9.033,
+    "firstPrice": 1353838000,
+    "lastPrice": 1237978000,
+    "feePct": 0.3
+  },
+  "daily": [
+    {
+      "d": "2026-11-09",
+      "t": 1794232556,
+      "equity": 100000000
+    },
+    {
+      "d": "2026-11-10",
+      "t": 1794327835,
+      "equity": 100000000
+    },
+    {
+      "d": "2026-11-11",
+      "t": 1794394072,
+      "equity": 100000000
+    },
+    {
+      "d": "2026-11-12",
+      "t": 1794476627,
+      "equity": 100000000
+    },
+    {
+      "d": "2026-11-13",
+      "t": 1794586494,
+      "equity": 100000000
+    },
+    {
+      "d": "2026-11-14",
+      "t": 1794655463,
+      "equity": 100000000
+    }
+  ],
+  "state": {
+    "cashIdr": 100000000,
+    "positions": [],
+    "tickCount": 19
+  },
+  "sameWindowBacktest": {
+    "file": "data/backtest_10d.json",
+    "window": {
+      "from": "2026-11-04T05:00:00.000Z",
+      "to": "2026-11-14T05:00:00.000Z",
+      "fromWib": "2026-11-04 12:00:00",
+      "toWib": "2026-11-14 12:00:00",
+      "days": 10
+    },
+    "totalReturnPct": -1.0955,
+    "maxDrawdownPct": -1.2143,
+    "trades": 1,
+    "profitFactor": 0,
+    "winRatePct": 0,
+    "costSharePct": null,
+    "benchmarkBtcPct": -12.5532
+  },
+  "gap": {
+    "returnGapPct": 1.0955,
+    "note": "Forward dikurangi backtest pada jendela identik. Selisih wajar karena fill forward memakai order book nyata, backtest memakai model biaya."
+  }
+}

@@ -1,0 +1,2 @@
+pair,entry_time,exit_time,qty,entry_price,exit_price,entry_notional,exit_notional,entry_fee,exit_fee,gross_pnl,net_pnl,return_pct,bars_held,exit_reason
+ETHIDR,2026-11-04 23:00:00,2026-11-05 20:00:00,1,43861186.85128707,43026315.03338349,43861186.85,43026315.03,131583.56,129078.95,-834871.82,-1095534.32,-2.4977,21,"Close 43099000 < trailing stop ATR 2.5x (43321750.00)"

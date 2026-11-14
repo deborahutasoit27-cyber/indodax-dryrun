@@ -6,43 +6,45 @@
   "pairs": [
     {
       "symbol": "BTCIDR",
-      "bars": 26298,
+      "bars": 26548,
       "requests": 41,
       "coverage": 1,
       "first": "2023-11-04T10:00:00.000Z",
-      "last": "2026-11-04T03:00:00.000Z"
+      "last": "2026-11-14T13:00:00.000Z"
     },
     {
       "symbol": "ETHIDR",
-      "bars": 26298,
+      "bars": 26548,
       "requests": 41,
       "coverage": 1,
       "first": "2023-11-04T10:00:00.000Z",
-      "last": "2026-11-04T03:00:00.000Z"
+      "last": "2026-11-14T13:00:00.000Z"
     },
     {
       "symbol": "DOGEIDR",
-      "bars": 26298,
+      "bars": 26548,
       "requests": 41,
       "coverage": 1,
       "first": "2023-11-04T10:00:00.000Z",
-      "last": "2026-11-04T03:00:00.000Z"
+      "last": "2026-11-14T13:00:00.000Z"
     },
     {
       "symbol": "ADAIDR",
-      "bars": 26298,
+      "bars": 26548,
       "requests": 41,
       "coverage": 1,
       "first": "2023-11-04T10:00:00.000Z",
-      "last": "2026-11-04T03:00:00.000Z"
+      "last": "2026-11-14T13:00:00.000Z"
     },
     {
       "symbol": "BNBIDR",
-      "bars": 26298,
+      "bars": 26548,
       "requests": 41,
       "coverage": 1,
       "first": "2023-11-04T10:00:00.000Z",
-      "last": "2026-11-04T03:00:00.000Z"
+      "last": "2026-11-14T13:00:00.000Z"
     }
-  ]
+  ],
+  "refreshedAt": "2026-11-14T13:35:09.584Z",
+  "refreshNote": "Bar 5-14 Nov 2026 ditambahkan untuk menutup jendela forward test (awal window tidak digeser)."
 }

@@ -1,0 +1,3097 @@
+{
+  "exportedAt": "2026-11-14T13:33:33.978Z",
+  "killSwitch": false,
+  "state": {
+    "version": 1,
+    "startedAt": "2026-11-09T13:44:40.000Z",
+    "startedAtUnix": 1794231880,
+    "cashIdr": 100000000,
+    "positions": {},
+    "candleTimes": {
+      "BTCIDR": 1794650400,
+      "ETHIDR": 1794650400,
+      "DOGEIDR": 1794650400,
+      "ADAIDR": 1794650400,
+      "BNBIDR": 1794650400
+    },
+    "day": {
+      "key": "2026-11-14",
+      "startEquity": 100000000,
+      "equityAtClose": null,
+      "previous": {
+        "key": "2026-11-13",
+        "startEquity": 100000000,
+        "equityAtClose": null,
+        "previous": {
+          "key": "2026-11-12",
+          "startEquity": 100000000,
+          "equityAtClose": null,
+          "previous": {
+            "key": "2026-11-11",
+            "startEquity": 100000000,
+            "equityAtClose": null,
+            "previous": {
+              "key": "2026-11-10",
+              "startEquity": 100000000,
+              "equityAtClose": null,
+              "previous": {
+                "key": "2026-11-09",
+                "startEquity": 100000000,
+                "equityAtClose": null,
+                "previous": null
+              }
+            }
+          }
+        }
+      }
+    },
+    "killSwitch": false,
+    "tickCount": 19,
+    "lastTickAt": "2026-11-14T11:24:23.000Z",
+    "lockUntil": 0,
+    "apiErrors": 0,
+    "firstTickUnix": 1794231880
+  },
+  "logs": {
+    "tick": [
+      {
+        "t": 1794231880,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-09T13:44:54.704Z"
+      },
+      {
+        "t": 1794231913,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 0,
+        "skipped": 5,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-09T13:45:25.267Z"
+      },
+      {
+        "t": 1794232556,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 0,
+        "skipped": 5,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-09T13:56:08.385Z"
+      },
+      {
+        "t": 1794266683,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-09T23:24:57.807Z"
+      },
+      {
+        "t": 1794294555,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-10T07:09:28.339Z"
+      },
+      {
+        "t": 1794327835,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-10T16:24:09.796Z"
+      },
+      {
+        "t": 1794349235,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-10T22:20:49.048Z"
+      },
+      {
+        "t": 1794365086,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-11T02:45:00.222Z"
+      },
+      {
+        "t": 1794394072,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-11T10:48:06.120Z"
+      },
+      {
+        "t": 1794422318,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-11T18:38:51.594Z"
+      },
+      {
+        "t": 1794446972,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-12T01:29:46.399Z"
+      },
+      {
+        "t": 1794476627,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-12T09:44:01.557Z"
+      },
+      {
+        "t": 1794507190,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-12T18:13:24.016Z"
+      },
+      {
+        "t": 1794528917,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-13T00:15:30.150Z"
+      },
+      {
+        "t": 1794556373,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-13T07:53:06.945Z"
+      },
+      {
+        "t": 1794586494,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-13T16:15:08.147Z"
+      },
+      {
+        "t": 1794609229,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-13T22:34:03.337Z"
+      },
+      {
+        "t": 1794625697,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-14T03:08:31.307Z"
+      },
+      {
+        "t": 1794655463,
+        "equity": 100000000,
+        "orders": 0,
+        "evaluated": 5,
+        "skipped": 0,
+        "killSwitch": false,
+        "apiErrors": 0,
+        "loggedAt": "2026-11-14T11:24:38.032Z"
+      }
+    ],
+    "order": [],
+    "equity": [
+      {
+        "t": 1794231880,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-09",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1353838000,
+          "ETHIDR": 38399000,
+          "DOGEIDR": 1263,
+          "ADAIDR": 3240,
+          "BNBIDR": 12441824
+        },
+        "loggedAt": "2026-11-09T13:44:54.477Z"
+      },
+      {
+        "t": 1794231913,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-09",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1353838000,
+          "ETHIDR": 38399000,
+          "DOGEIDR": 1263,
+          "ADAIDR": 3240,
+          "BNBIDR": 12441824
+        },
+        "loggedAt": "2026-11-09T13:45:25.040Z"
+      },
+      {
+        "t": 1794232556,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-09",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1353838000,
+          "ETHIDR": 38399000,
+          "DOGEIDR": 1263,
+          "ADAIDR": 3240,
+          "BNBIDR": 12441824
+        },
+        "loggedAt": "2026-11-09T13:56:08.170Z"
+      },
+      {
+        "t": 1794266683,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-10",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1360909000,
+          "ETHIDR": 38588000,
+          "DOGEIDR": 1267,
+          "ADAIDR": 3221,
+          "BNBIDR": 12499997
+        },
+        "loggedAt": "2026-11-09T23:24:57.579Z"
+      },
+      {
+        "t": 1794294555,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-10",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1345700000,
+          "ETHIDR": 38154000,
+          "DOGEIDR": 1260,
+          "ADAIDR": 3233,
+          "BNBIDR": 12474180
+        },
+        "loggedAt": "2026-11-10T07:09:28.118Z"
+      },
+      {
+        "t": 1794327835,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-10",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1325446000,
+          "ETHIDR": 36624000,
+          "DOGEIDR": 1222,
+          "ADAIDR": 3126,
+          "BNBIDR": 12292662
+        },
+        "loggedAt": "2026-11-10T16:24:09.568Z"
+      },
+      {
+        "t": 1794349235,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-11",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1334725000,
+          "ETHIDR": 37201000,
+          "DOGEIDR": 1231,
+          "ADAIDR": 3157,
+          "BNBIDR": 12279939
+        },
+        "loggedAt": "2026-11-10T22:20:48.816Z"
+      },
+      {
+        "t": 1794365086,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-11",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1331956000,
+          "ETHIDR": 37150000,
+          "DOGEIDR": 1233,
+          "ADAIDR": 3160,
+          "BNBIDR": 12378357
+        },
+        "loggedAt": "2026-11-11T02:44:59.996Z"
+      },
+      {
+        "t": 1794394072,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-11",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1337514000,
+          "ETHIDR": 37269000,
+          "DOGEIDR": 1233,
+          "ADAIDR": 3182,
+          "BNBIDR": 12355742
+        },
+        "loggedAt": "2026-11-11T10:48:05.893Z"
+      },
+      {
+        "t": 1794422318,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-12",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1352609000,
+          "ETHIDR": 37928000,
+          "DOGEIDR": 1254,
+          "ADAIDR": 3266,
+          "BNBIDR": 12443285
+        },
+        "loggedAt": "2026-11-11T18:38:51.376Z"
+      },
+      {
+        "t": 1794446972,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-12",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1344500000,
+          "ETHIDR": 37459000,
+          "DOGEIDR": 1227,
+          "ADAIDR": 3180,
+          "BNBIDR": 12404262
+        },
+        "loggedAt": "2026-11-12T01:29:46.178Z"
+      },
+      {
+        "t": 1794476627,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-12",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1341314000,
+          "ETHIDR": 37330000,
+          "DOGEIDR": 1220,
+          "ADAIDR": 3160,
+          "BNBIDR": 12260002
+        },
+        "loggedAt": "2026-11-12T09:44:01.335Z"
+      },
+      {
+        "t": 1794507190,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-13",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1313407000,
+          "ETHIDR": 36911000,
+          "DOGEIDR": 1205,
+          "ADAIDR": 3123,
+          "BNBIDR": 11949391
+        },
+        "loggedAt": "2026-11-12T18:13:23.793Z"
+      },
+      {
+        "t": 1794528917,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-13",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1305940000,
+          "ETHIDR": 36883000,
+          "DOGEIDR": 1212,
+          "ADAIDR": 3185,
+          "BNBIDR": 11925211
+        },
+        "loggedAt": "2026-11-13T00:15:29.936Z"
+      },
+      {
+        "t": 1794556373,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-13",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1266052000,
+          "ETHIDR": 35500000,
+          "DOGEIDR": 1181,
+          "ADAIDR": 3134,
+          "BNBIDR": 11616362
+        },
+        "loggedAt": "2026-11-13T07:53:06.720Z"
+      },
+      {
+        "t": 1794586494,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-13",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1255340000,
+          "ETHIDR": 35279000,
+          "DOGEIDR": 1188,
+          "ADAIDR": 3137,
+          "BNBIDR": 11599135
+        },
+        "loggedAt": "2026-11-13T16:15:07.921Z"
+      },
+      {
+        "t": 1794609229,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-14",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1249999000,
+          "ETHIDR": 35225000,
+          "DOGEIDR": 1180,
+          "ADAIDR": 3079,
+          "BNBIDR": 11550670
+        },
+        "loggedAt": "2026-11-13T22:34:03.119Z"
+      },
+      {
+        "t": 1794625697,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-14",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1237979000,
+          "ETHIDR": 34951000,
+          "DOGEIDR": 1158,
+          "ADAIDR": 3024,
+          "BNBIDR": 11496902
+        },
+        "loggedAt": "2026-11-14T03:08:31.081Z"
+      },
+      {
+        "t": 1794655463,
+        "equity": 100000000,
+        "cashIdr": 100000000,
+        "positions": 0,
+        "openPairs": [],
+        "dayKey": "2026-11-14",
+        "dayLossPct": 0,
+        "killSwitch": false,
+        "prices": {
+          "BTCIDR": 1237978000,
+          "ETHIDR": 34943000,
+          "DOGEIDR": 1152,
+          "ADAIDR": 2988,
+          "BNBIDR": 11384172
+        },
+        "loggedAt": "2026-11-14T11:24:37.806Z"
+      }
+    ],
+    "error": [],
+    "snapshot": [
+      {
+        "t": 1794231880,
+        "pair": "BTCIDR",
+        "bid": 1350263000,
+        "ask": 1350264000,
+        "spreadPct": 0.0000740596187336768,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:44:44.073Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "ETHIDR",
+        "bid": 38323000,
+        "ask": 38324000,
+        "spreadPct": 0.0026093650110245673,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:44:46.343Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "DOGEIDR",
+        "bid": 1257,
+        "ask": 1258,
+        "spreadPct": 0.07952286282306163,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:44:48.584Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "ADAIDR",
+        "bid": 3239,
+        "ask": 3240,
+        "spreadPct": 0.03086896125945362,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:44:50.828Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "BNBIDR",
+        "bid": 12359502,
+        "ask": 12431611,
+        "spreadPct": 0.5817326555689533,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:44:53.111Z"
+      },
+      {
+        "t": 1794231913,
+        "pair": "BTCIDR",
+        "bid": 1350263000,
+        "ask": 1350264000,
+        "spreadPct": 0.0000740596187336768,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:45:15.906Z"
+      },
+      {
+        "t": 1794231913,
+        "pair": "ETHIDR",
+        "bid": 38323000,
+        "ask": 38324000,
+        "spreadPct": 0.0026093650110245673,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:45:18.187Z"
+      },
+      {
+        "t": 1794231913,
+        "pair": "DOGEIDR",
+        "bid": 1257,
+        "ask": 1258,
+        "spreadPct": 0.07952286282306163,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:45:20.398Z"
+      },
+      {
+        "t": 1794231913,
+        "pair": "ADAIDR",
+        "bid": 3239,
+        "ask": 3240,
+        "spreadPct": 0.03086896125945362,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:45:22.591Z"
+      },
+      {
+        "t": 1794231913,
+        "pair": "BNBIDR",
+        "bid": 12359501,
+        "ask": 12431592,
+        "spreadPct": 0.5815879114325456,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:45:24.813Z"
+      },
+      {
+        "t": 1794232556,
+        "pair": "BTCIDR",
+        "bid": 1350897000,
+        "ask": 1351223000,
+        "spreadPct": 0.024129202256006396,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:55:59.004Z"
+      },
+      {
+        "t": 1794232556,
+        "pair": "ETHIDR",
+        "bid": 38358000,
+        "ask": 38406000,
+        "spreadPct": 0.12505862122870096,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:56:01.323Z"
+      },
+      {
+        "t": 1794232556,
+        "pair": "DOGEIDR",
+        "bid": 1259,
+        "ask": 1261,
+        "spreadPct": 0.15873015873015872,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:56:03.541Z"
+      },
+      {
+        "t": 1794232556,
+        "pair": "ADAIDR",
+        "bid": 3242,
+        "ask": 3247,
+        "spreadPct": 0.15410695022345508,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:56:05.729Z"
+      },
+      {
+        "t": 1794232556,
+        "pair": "BNBIDR",
+        "bid": 12359502,
+        "ask": 12431259,
+        "spreadPct": 0.5789011478913455,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T13:56:07.954Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "BTCIDR",
+        "bid": 1358662000,
+        "ask": 1358812000,
+        "spreadPct": 0.011039664040943907,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T23:24:47.315Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "ETHIDR",
+        "bid": 38506000,
+        "ask": 38560000,
+        "spreadPct": 0.14013962058495316,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T23:24:49.552Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "DOGEIDR",
+        "bid": 1263,
+        "ask": 1265,
+        "spreadPct": 0.15822784810126583,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T23:24:51.762Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "ADAIDR",
+        "bid": 3200,
+        "ask": 3206,
+        "spreadPct": 0.18732438339057134,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T23:24:54.016Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "BNBIDR",
+        "bid": 12403690,
+        "ask": 12499221,
+        "spreadPct": 0.7672275743185204,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-09T23:24:56.218Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "BTCIDR",
+        "bid": 1345985000,
+        "ask": 1346046000,
+        "spreadPct": 0.004531894320682043,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T07:09:17.868Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "ETHIDR",
+        "bid": 38144000,
+        "ask": 38175000,
+        "spreadPct": 0.08123796171333482,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T07:09:20.207Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "DOGEIDR",
+        "bid": 1261,
+        "ask": 1263,
+        "spreadPct": 0.15847860538827258,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T07:09:22.420Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "ADAIDR",
+        "bid": 3224,
+        "ask": 3235,
+        "spreadPct": 0.34061000154822724,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T07:09:24.594Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "BNBIDR",
+        "bid": 12405118,
+        "ask": 12474173,
+        "spreadPct": 0.5551203207519056,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T07:09:26.772Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "BTCIDR",
+        "bid": 1324195000,
+        "ask": 1325950000,
+        "spreadPct": 0.1324455831662041,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T16:23:58.797Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "ETHIDR",
+        "bid": 36673000,
+        "ask": 36674000,
+        "spreadPct": 0.0027267645575142813,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T16:24:01.103Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "DOGEIDR",
+        "bid": 1224,
+        "ask": 1226,
+        "spreadPct": 0.163265306122449,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T16:24:03.409Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "ADAIDR",
+        "bid": 3129,
+        "ask": 3142,
+        "spreadPct": 0.4146069207462925,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T16:24:05.852Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "BNBIDR",
+        "bid": 12213943,
+        "ask": 12299924,
+        "spreadPct": 0.7014886716975335,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T16:24:08.178Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "BTCIDR",
+        "bid": 1335000000,
+        "ask": 1335352000,
+        "spreadPct": 0.026363565552406577,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T22:20:38.458Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "ETHIDR",
+        "bid": 37200000,
+        "ask": 37201000,
+        "spreadPct": 0.0026881359121517182,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T22:20:40.723Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "DOGEIDR",
+        "bid": 1231,
+        "ask": 1232,
+        "spreadPct": 0.08120178643930166,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T22:20:42.982Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "ADAIDR",
+        "bid": 3146,
+        "ask": 3153,
+        "spreadPct": 0.2222575011906652,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T22:20:45.227Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "BNBIDR",
+        "bid": 12203006,
+        "ask": 12279487,
+        "spreadPct": 0.6247811446326157,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-10T22:20:47.433Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "BTCIDR",
+        "bid": 1331115000,
+        "ask": 1331116000,
+        "spreadPct": 0.0000751249609819734,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T02:44:49.544Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "ETHIDR",
+        "bid": 37239000,
+        "ask": 37240000,
+        "spreadPct": 0.0026853206944239313,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T02:44:51.907Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "DOGEIDR",
+        "bid": 1239,
+        "ask": 1241,
+        "spreadPct": 0.16129032258064516,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T02:44:54.175Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "ADAIDR",
+        "bid": 3175,
+        "ask": 3182,
+        "spreadPct": 0.22022966808242883,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T02:44:56.409Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "BNBIDR",
+        "bid": 12282137,
+        "ask": 12358106,
+        "spreadPct": 0.616625412338669,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T02:44:58.633Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "BTCIDR",
+        "bid": 1343283000,
+        "ask": 1343407000,
+        "spreadPct": 0.009230689063494486,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T10:47:55.397Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "ETHIDR",
+        "bid": 37401000,
+        "ask": 37402000,
+        "spreadPct": 0.0026736895579054314,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T10:47:57.719Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "DOGEIDR",
+        "bid": 1238,
+        "ask": 1240,
+        "spreadPct": 0.16142050040355124,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T10:47:59.978Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "ADAIDR",
+        "bid": 3205,
+        "ask": 3208,
+        "spreadPct": 0.09355995633868704,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T10:48:02.287Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "BNBIDR",
+        "bid": 12289627,
+        "ask": 12375960,
+        "spreadPct": 0.7000279377093276,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T10:48:04.525Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "BTCIDR",
+        "bid": 1353275000,
+        "ask": 1354433000,
+        "spreadPct": 0.0855335952030278,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T18:38:40.898Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "ETHIDR",
+        "bid": 37897000,
+        "ask": 37936000,
+        "spreadPct": 0.10285759497843946,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T18:38:43.235Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "DOGEIDR",
+        "bid": 1252,
+        "ask": 1254,
+        "spreadPct": 0.1596169193934557,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T18:38:45.482Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "ADAIDR",
+        "bid": 3233,
+        "ask": 3240,
+        "spreadPct": 0.21628302178279005,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T18:38:47.760Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "BNBIDR",
+        "bid": 12444737,
+        "ask": 12491004,
+        "spreadPct": 0.3710898344669204,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-11T18:38:50.028Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "BTCIDR",
+        "bid": 1337181000,
+        "ask": 1337800000,
+        "spreadPct": 0.046280702554522817,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T01:29:35.811Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "ETHIDR",
+        "bid": 37213000,
+        "ask": 37248000,
+        "spreadPct": 0.09400894427955575,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T01:29:38.090Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "DOGEIDR",
+        "bid": 1221,
+        "ask": 1223,
+        "spreadPct": 0.16366612111292964,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T01:29:40.374Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "ADAIDR",
+        "bid": 3156,
+        "ask": 3157,
+        "spreadPct": 0.031680658957706324,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T01:29:42.603Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "BNBIDR",
+        "bid": 12300008,
+        "ask": 12375824,
+        "spreadPct": 0.614495997541238,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T01:29:44.860Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "BTCIDR",
+        "bid": 1337935000,
+        "ask": 1339045000,
+        "spreadPct": 0.08292927104423642,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T09:43:50.967Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "ETHIDR",
+        "bid": 37268000,
+        "ask": 37305000,
+        "spreadPct": 0.0992316253872045,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T09:43:53.240Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "DOGEIDR",
+        "bid": 1222,
+        "ask": 1223,
+        "spreadPct": 0.081799591002045,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T09:43:55.517Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "ADAIDR",
+        "bid": 3161,
+        "ask": 3164,
+        "spreadPct": 0.09486166007905138,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T09:43:57.761Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "BNBIDR",
+        "bid": 12207253,
+        "ask": 12240390,
+        "spreadPct": 0.2710854375614042,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T09:44:00.004Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "BTCIDR",
+        "bid": 1314145000,
+        "ask": 1314703000,
+        "spreadPct": 0.042452055044643125,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T18:13:13.360Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "ETHIDR",
+        "bid": 36894000,
+        "ask": 36905000,
+        "spreadPct": 0.029810702042033087,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T18:13:15.703Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "DOGEIDR",
+        "bid": 1206,
+        "ask": 1208,
+        "spreadPct": 0.16570008285004142,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T18:13:17.992Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "ADAIDR",
+        "bid": 3133,
+        "ask": 3142,
+        "spreadPct": 0.2868525896414343,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T18:13:20.244Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "BNBIDR",
+        "bid": 11948884,
+        "ask": 12034204,
+        "spreadPct": 0.7115013712996425,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-12T18:13:22.452Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "BTCIDR",
+        "bid": 1304000000,
+        "ask": 1304001000,
+        "spreadPct": 0.00007668708715985921,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T00:15:20.151Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "ETHIDR",
+        "bid": 36883000,
+        "ask": 36884000,
+        "spreadPct": 0.0027112394431114185,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T00:15:21.763Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "DOGEIDR",
+        "bid": 1214,
+        "ask": 1215,
+        "spreadPct": 0.08233841086867023,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T00:15:24.114Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "ADAIDR",
+        "bid": 3193,
+        "ask": 3198,
+        "spreadPct": 0.1564700359881083,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T00:15:26.386Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "BNBIDR",
+        "bid": 11995000,
+        "ask": 12040208,
+        "spreadPct": 0.3761814751093479,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T00:15:28.613Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "BTCIDR",
+        "bid": 1259000000,
+        "ask": 1259003000,
+        "spreadPct": 0.00023828406876401657,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T07:52:56.295Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "ETHIDR",
+        "bid": 35480000,
+        "ask": 35501000,
+        "spreadPct": 0.05917076400726955,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T07:52:58.649Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "DOGEIDR",
+        "bid": 1181,
+        "ask": 1182,
+        "spreadPct": 0.08463817181548879,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T07:53:00.952Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "ADAIDR",
+        "bid": 3130,
+        "ask": 3137,
+        "spreadPct": 0.22339237274613052,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T07:53:03.163Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "BNBIDR",
+        "bid": 11557883,
+        "ask": 11671713,
+        "spreadPct": 0.9800428728937,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T07:53:05.375Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "BTCIDR",
+        "bid": 1250000000,
+        "ask": 1250841000,
+        "spreadPct": 0.0672573746191781,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T16:14:57.324Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "ETHIDR",
+        "bid": 35129000,
+        "ask": 35227000,
+        "spreadPct": 0.2785832054124737,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T16:14:59.701Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "DOGEIDR",
+        "bid": 1185,
+        "ask": 1186,
+        "spreadPct": 0.08435259384226065,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T16:15:01.959Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "ADAIDR",
+        "bid": 3120,
+        "ask": 3129,
+        "spreadPct": 0.28804608737397985,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T16:15:04.278Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "BNBIDR",
+        "bid": 11500003,
+        "ask": 11595013,
+        "spreadPct": 0.8227749225200797,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T16:15:06.554Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "BTCIDR",
+        "bid": 1247635000,
+        "ask": 1247881000,
+        "spreadPct": 0.019715361472336785,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T22:33:52.846Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "ETHIDR",
+        "bid": 35185000,
+        "ask": 35234000,
+        "spreadPct": 0.13916698618270637,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T22:33:55.090Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "DOGEIDR",
+        "bid": 1176,
+        "ask": 1178,
+        "spreadPct": 0.16992353440951571,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T22:33:57.329Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "ADAIDR",
+        "bid": 3059,
+        "ask": 3068,
+        "spreadPct": 0.2937816223274033,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T22:33:59.560Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "BNBIDR",
+        "bid": 11467769,
+        "ask": 11494247,
+        "spreadPct": 0.2306243493602652,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-13T22:34:01.811Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "BTCIDR",
+        "bid": 1237003000,
+        "ask": 1237836000,
+        "spreadPct": 0.0673175103511784,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T03:08:20.685Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "ETHIDR",
+        "bid": 34959000,
+        "ask": 34974000,
+        "spreadPct": 0.042898202565312515,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T03:08:23.024Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "DOGEIDR",
+        "bid": 1154,
+        "ask": 1156,
+        "spreadPct": 0.17316017316017315,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T03:08:25.295Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "ADAIDR",
+        "bid": 3013,
+        "ask": 3018,
+        "spreadPct": 0.165809981760902,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T03:08:27.520Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "BNBIDR",
+        "bid": 11385141,
+        "ask": 11496901,
+        "spreadPct": 0.9768358960271115,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T03:08:29.732Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "BTCIDR",
+        "bid": 1235455000,
+        "ask": 1235456000,
+        "spreadPct": 0.00008094180648351964,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T11:24:27.482Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "ETHIDR",
+        "bid": 34981000,
+        "ask": 34992000,
+        "spreadPct": 0.03144069855515699,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T11:24:29.757Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "DOGEIDR",
+        "bid": 1154,
+        "ask": 1156,
+        "spreadPct": 0.17316017316017315,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T11:24:31.993Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "ADAIDR",
+        "bid": 2998,
+        "ask": 3005,
+        "spreadPct": 0.23321672497084792,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T11:24:34.240Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "BNBIDR",
+        "bid": 11282030,
+        "ask": 11384335,
+        "spreadPct": 0.9027031903880486,
+        "bidLevels": 150,
+        "askLevels": 150,
+        "issues": [],
+        "loggedAt": "2026-11-14T11:24:36.449Z"
+      }
+    ],
+    "signal": [
+      {
+        "t": 1794231880,
+        "pair": "BTCIDR",
+        "candleTime": 1794225600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794225600,
+          "close": 1353838000,
+          "ema": 1391723162.6617136,
+          "atr": 9096083.333333334,
+          "entryHigh": 1468996000,
+          "exitLow": 1334026000
+        },
+        "loggedAt": "2026-11-09T13:44:53.339Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "ETHIDR",
+        "candleTime": 1794225600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794225600,
+          "close": 38399000,
+          "ema": 40768245.32799139,
+          "atr": 444708.3333333333,
+          "entryHigh": 44291000,
+          "exitLow": 37639000
+        },
+        "loggedAt": "2026-11-09T13:44:53.567Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "DOGEIDR",
+        "candleTime": 1794225600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794225600,
+          "close": 1263,
+          "ema": 1322.4779093253921,
+          "atr": 13.833333333333334,
+          "entryHigh": 1415,
+          "exitLow": 1226
+        },
+        "loggedAt": "2026-11-09T13:44:53.794Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "ADAIDR",
+        "candleTime": 1794225600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794225600,
+          "close": 3240,
+          "ema": 3377.472192343259,
+          "atr": 34.916666666666664,
+          "entryHigh": 3637,
+          "exitLow": 3110
+        },
+        "loggedAt": "2026-11-09T13:44:54.022Z"
+      },
+      {
+        "t": 1794231880,
+        "pair": "BNBIDR",
+        "candleTime": 1794225600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794225600,
+          "close": 12441824,
+          "ema": 12683363.017296867,
+          "atr": 103596.375,
+          "entryHigh": 13110300,
+          "exitLow": 12205325
+        },
+        "loggedAt": "2026-11-09T13:44:54.249Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "BTCIDR",
+        "candleTime": 1794261600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794261600,
+          "close": 1360909000,
+          "ema": 1388164060.4914289,
+          "atr": 9907416.666666666,
+          "entryHigh": 1468996000,
+          "exitLow": 1334026000
+        },
+        "loggedAt": "2026-11-09T23:24:56.441Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "ETHIDR",
+        "candleTime": 1794261600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794261600,
+          "close": 38588000,
+          "ema": 40552918.10782188,
+          "atr": 350041.6666666667,
+          "entryHigh": 44291000,
+          "exitLow": 37639000
+        },
+        "loggedAt": "2026-11-09T23:24:56.672Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "DOGEIDR",
+        "candleTime": 1794261600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794261600,
+          "close": 1267,
+          "ema": 1317.1975132764646,
+          "atr": 11.75,
+          "entryHigh": 1415,
+          "exitLow": 1226
+        },
+        "loggedAt": "2026-11-09T23:24:56.900Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "ADAIDR",
+        "candleTime": 1794261600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794261600,
+          "close": 3221,
+          "ema": 3364.1284221095652,
+          "atr": 31.583333333333332,
+          "entryHigh": 3637,
+          "exitLow": 3110
+        },
+        "loggedAt": "2026-11-09T23:24:57.128Z"
+      },
+      {
+        "t": 1794266683,
+        "pair": "BNBIDR",
+        "candleTime": 1794261600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794261600,
+          "close": 12499997,
+          "ema": 12658707.538964448,
+          "atr": 98486.66666666667,
+          "entryHigh": 13110300,
+          "exitLow": 12205325
+        },
+        "loggedAt": "2026-11-09T23:24:57.351Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "BTCIDR",
+        "candleTime": 1794290400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794290400,
+          "close": 1345700000,
+          "ema": 1385321224.2520194,
+          "atr": 8007541.666666667,
+          "entryHigh": 1468996000,
+          "exitLow": 1334026000
+        },
+        "loggedAt": "2026-11-10T07:09:27.000Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "ETHIDR",
+        "candleTime": 1794290400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794290400,
+          "close": 38154000,
+          "ema": 40381285.07525533,
+          "atr": 278625,
+          "entryHigh": 44291000,
+          "exitLow": 37639000
+        },
+        "loggedAt": "2026-11-10T07:09:27.225Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "DOGEIDR",
+        "candleTime": 1794290400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794290400,
+          "close": 1260,
+          "ema": 1312.8443017822544,
+          "atr": 9.333333333333334,
+          "entryHigh": 1415,
+          "exitLow": 1226
+        },
+        "loggedAt": "2026-11-10T07:09:27.447Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "ADAIDR",
+        "candleTime": 1794290400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794290400,
+          "close": 3233,
+          "ema": 3352.338768918101,
+          "atr": 25.75,
+          "entryHigh": 3637,
+          "exitLow": 3110
+        },
+        "loggedAt": "2026-11-10T07:09:27.669Z"
+      },
+      {
+        "t": 1794294555,
+        "pair": "BNBIDR",
+        "candleTime": 1794290400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794290400,
+          "close": 12474180,
+          "ema": 12642332.010431439,
+          "atr": 87011.25,
+          "entryHigh": 13110300,
+          "exitLow": 12205325
+        },
+        "loggedAt": "2026-11-10T07:09:27.890Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "BTCIDR",
+        "candleTime": 1794322800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794322800,
+          "close": 1325446000,
+          "ema": 1381528814.7145784,
+          "atr": 8189250,
+          "entryHigh": 1468996000,
+          "exitLow": 1329247000
+        },
+        "loggedAt": "2026-11-10T16:24:08.411Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "ETHIDR",
+        "candleTime": 1794322800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794322800,
+          "close": 36624000,
+          "ema": 40150971.934953295,
+          "atr": 322041.6666666667,
+          "entryHigh": 44291000,
+          "exitLow": 36750000
+        },
+        "loggedAt": "2026-11-10T16:24:08.642Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "DOGEIDR",
+        "candleTime": 1794322800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794322800,
+          "close": 1222,
+          "ema": 1307.5906856250965,
+          "atr": 9.791666666666666,
+          "entryHigh": 1415,
+          "exitLow": 1226
+        },
+        "loggedAt": "2026-11-10T16:24:08.875Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "ADAIDR",
+        "candleTime": 1794322800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794322800,
+          "close": 3126,
+          "ema": 3339.353169715553,
+          "atr": 25.375,
+          "entryHigh": 3637,
+          "exitLow": 3110
+        },
+        "loggedAt": "2026-11-10T16:24:09.102Z"
+      },
+      {
+        "t": 1794327835,
+        "pair": "BNBIDR",
+        "candleTime": 1794322800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794322800,
+          "close": 12292662,
+          "ema": 12623354.423817802,
+          "atr": 93464,
+          "entryHigh": 13110300,
+          "exitLow": 12205325
+        },
+        "loggedAt": "2026-11-10T16:24:09.335Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "BTCIDR",
+        "candleTime": 1794344400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794344400,
+          "close": 1334725000,
+          "ema": 1378469553.896624,
+          "atr": 7818083.333333333,
+          "entryHigh": 1468996000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-10T22:20:47.666Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "ETHIDR",
+        "candleTime": 1794344400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794344400,
+          "close": 37201000,
+          "ema": 39966134.14800594,
+          "atr": 334708.3333333333,
+          "entryHigh": 44291000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-10T22:20:47.899Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "DOGEIDR",
+        "candleTime": 1794344400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794344400,
+          "close": 1231,
+          "ema": 1302.5847713312428,
+          "atr": 10.083333333333334,
+          "entryHigh": 1415,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-10T22:20:48.127Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "ADAIDR",
+        "candleTime": 1794344400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794344400,
+          "close": 3157,
+          "ema": 3327.6770515835983,
+          "atr": 24.916666666666668,
+          "entryHigh": 3637,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-10T22:20:48.355Z"
+      },
+      {
+        "t": 1794349235,
+        "pair": "BNBIDR",
+        "candleTime": 1794344400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794344400,
+          "close": 12279939,
+          "ema": 12597974.663830891,
+          "atr": 100093.41666666667,
+          "entryHigh": 13110300,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-10T22:20:48.584Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "BTCIDR",
+        "candleTime": 1794358800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794358800,
+          "close": 1331956000,
+          "ema": 1376646402.351892,
+          "atr": 7793333.333333333,
+          "entryHigh": 1468996000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-11T02:44:58.860Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "ETHIDR",
+        "candleTime": 1794358800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794358800,
+          "close": 37150000,
+          "ema": 39853481.54911174,
+          "atr": 342625,
+          "entryHigh": 44291000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-11T02:44:59.090Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "DOGEIDR",
+        "candleTime": 1794358800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794358800,
+          "close": 1233,
+          "ema": 1299.7521923222826,
+          "atr": 10.916666666666666,
+          "entryHigh": 1415,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-11T02:44:59.317Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "ADAIDR",
+        "candleTime": 1794358800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794358800,
+          "close": 3160,
+          "ema": 3320.766638821344,
+          "atr": 25.458333333333332,
+          "entryHigh": 3637,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-11T02:44:59.543Z"
+      },
+      {
+        "t": 1794365086,
+        "pair": "BNBIDR",
+        "candleTime": 1794358800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794358800,
+          "close": 12378357,
+          "ema": 12585906.824195582,
+          "atr": 102347.29166666667,
+          "entryHigh": 13110300,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-11T02:44:59.769Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "BTCIDR",
+        "candleTime": 1794387600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794387600,
+          "close": 1337514000,
+          "ema": 1373556447.9520767,
+          "atr": 8037833.333333333,
+          "entryHigh": 1468996000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-11T10:48:04.753Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "ETHIDR",
+        "candleTime": 1794387600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794387600,
+          "close": 37269000,
+          "ema": 39659659.127679266,
+          "atr": 340500,
+          "entryHigh": 44291000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-11T10:48:04.983Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "DOGEIDR",
+        "candleTime": 1794387600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794387600,
+          "close": 1233,
+          "ema": 1294.651199126484,
+          "atr": 11.333333333333334,
+          "entryHigh": 1415,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-11T10:48:05.211Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "ADAIDR",
+        "candleTime": 1794387600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794387600,
+          "close": 3182,
+          "ema": 3309.5168296290017,
+          "atr": 25.041666666666668,
+          "entryHigh": 3637,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-11T10:48:05.439Z"
+      },
+      {
+        "t": 1794394072,
+        "pair": "BNBIDR",
+        "candleTime": 1794387600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794387600,
+          "close": 12355742,
+          "ema": 12568253.125189068,
+          "atr": 105644.41666666667,
+          "entryHigh": 13110300,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-11T10:48:05.666Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "BTCIDR",
+        "candleTime": 1794416400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794416400,
+          "close": 1352609000,
+          "ema": 1371226161.3646474,
+          "atr": 6697625,
+          "entryHigh": 1466930000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-11T18:38:50.259Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "ETHIDR",
+        "candleTime": 1794416400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794416400,
+          "close": 37928000,
+          "ema": 39492370.2646099,
+          "atr": 240708.33333333334,
+          "entryHigh": 44200000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-11T18:38:50.478Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "DOGEIDR",
+        "candleTime": 1794416400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794416400,
+          "close": 1254,
+          "ema": 1290.7347011917343,
+          "atr": 9.125,
+          "entryHigh": 1408,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-11T18:38:50.709Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "ADAIDR",
+        "candleTime": 1794416400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794416400,
+          "close": 3266,
+          "ema": 3302.978669214083,
+          "atr": 20.25,
+          "entryHigh": 3625,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-11T18:38:50.939Z"
+      },
+      {
+        "t": 1794422318,
+        "pair": "BNBIDR",
+        "candleTime": 1794416400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794416400,
+          "close": 12443285,
+          "ema": 12552775.319972478,
+          "atr": 85262.83333333333,
+          "entryHigh": 13110300,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-11T18:38:51.158Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "BTCIDR",
+        "candleTime": 1794441600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794441600,
+          "close": 1344500000,
+          "ema": 1369702359.098076,
+          "atr": 6729750,
+          "entryHigh": 1465211000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-12T01:29:45.083Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "ETHIDR",
+        "candleTime": 1794441600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794441600,
+          "close": 37459000,
+          "ema": 39364773.38158915,
+          "atr": 242833.33333333334,
+          "entryHigh": 44086000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-12T01:29:45.303Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "DOGEIDR",
+        "candleTime": 1794441600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794441600,
+          "close": 1227,
+          "ema": 1287.1241258333096,
+          "atr": 10.125,
+          "entryHigh": 1402,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-12T01:29:45.525Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "ADAIDR",
+        "candleTime": 1794441600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794441600,
+          "close": 3180,
+          "ema": 3296.0548077588705,
+          "atr": 22.708333333333332,
+          "entryHigh": 3615,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-12T01:29:45.742Z"
+      },
+      {
+        "t": 1794446972,
+        "pair": "BNBIDR",
+        "candleTime": 1794441600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794441600,
+          "close": 12404262,
+          "ema": 12545743.147680359,
+          "atr": 81143,
+          "entryHigh": 13092519,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-12T01:29:45.959Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "BTCIDR",
+        "candleTime": 1794470400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794470400,
+          "close": 1341314000,
+          "ema": 1367494557.3002245,
+          "atr": 5539083.333333333,
+          "entryHigh": 1455244000,
+          "exitLow": 1318001000
+        },
+        "loggedAt": "2026-11-12T09:44:00.225Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "ETHIDR",
+        "candleTime": 1794470400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794470400,
+          "close": 37330000,
+          "ema": 39207758.68491544,
+          "atr": 213291.66666666666,
+          "entryHigh": 43817000,
+          "exitLow": 36323000
+        },
+        "loggedAt": "2026-11-12T09:44:00.450Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "DOGEIDR",
+        "candleTime": 1794470400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794470400,
+          "close": 1220,
+          "ema": 1282.1079373285793,
+          "atr": 9.75,
+          "entryHigh": 1395,
+          "exitLow": 1208
+        },
+        "loggedAt": "2026-11-12T09:44:00.673Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "ADAIDR",
+        "candleTime": 1794470400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794470400,
+          "close": 3160,
+          "ema": 3284.9517350941137,
+          "atr": 23.666666666666668,
+          "entryHigh": 3604,
+          "exitLow": 3090
+        },
+        "loggedAt": "2026-11-12T09:44:00.894Z"
+      },
+      {
+        "t": 1794476627,
+        "pair": "BNBIDR",
+        "candleTime": 1794470400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794470400,
+          "close": 12260002,
+          "ema": 12528278.067268858,
+          "atr": 81847.08333333333,
+          "entryHigh": 12943999,
+          "exitLow": 12100015
+        },
+        "loggedAt": "2026-11-12T09:44:01.115Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "BTCIDR",
+        "candleTime": 1794502800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794502800,
+          "close": 1313407000,
+          "ema": 1363699555.0163188,
+          "atr": 6098375,
+          "entryHigh": 1389000000,
+          "exitLow": 1303595000
+        },
+        "loggedAt": "2026-11-12T18:13:22.676Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "ETHIDR",
+        "candleTime": 1794502800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794502800,
+          "close": 36911000,
+          "ema": 39009924.37236701,
+          "atr": 258875,
+          "entryHigh": 41062000,
+          "exitLow": 36289000
+        },
+        "loggedAt": "2026-11-12T18:13:22.900Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "DOGEIDR",
+        "candleTime": 1794502800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794502800,
+          "close": 1205,
+          "ema": 1275.6593473824728,
+          "atr": 10.708333333333334,
+          "entryHigh": 1325,
+          "exitLow": 1180
+        },
+        "loggedAt": "2026-11-12T18:13:23.124Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "ADAIDR",
+        "candleTime": 1794502800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794502800,
+          "close": 3123,
+          "ema": 3271.3896088697256,
+          "atr": 25.291666666666668,
+          "entryHigh": 3425,
+          "exitLow": 3070
+        },
+        "loggedAt": "2026-11-12T18:13:23.346Z"
+      },
+      {
+        "t": 1794507190,
+        "pair": "BNBIDR",
+        "candleTime": 1794502800,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794502800,
+          "close": 11949391,
+          "ema": 12486510.04330137,
+          "atr": 92774.58333333333,
+          "entryHigh": 12669006,
+          "exitLow": 11892402
+        },
+        "loggedAt": "2026-11-12T18:13:23.570Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "BTCIDR",
+        "candleTime": 1794524400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794524400,
+          "close": 1305940000,
+          "ema": 1360485265.2146587,
+          "atr": 5748041.666666667,
+          "entryHigh": 1386840000,
+          "exitLow": 1303595000
+        },
+        "loggedAt": "2026-11-13T00:15:28.830Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "ETHIDR",
+        "candleTime": 1794524400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794524400,
+          "close": 36883000,
+          "ema": 38885847.80644417,
+          "atr": 245666.66666666666,
+          "entryHigh": 40819000,
+          "exitLow": 36289000
+        },
+        "loggedAt": "2026-11-13T00:15:29.063Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "DOGEIDR",
+        "candleTime": 1794524400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794524400,
+          "close": 1212,
+          "ema": 1271.7323033738235,
+          "atr": 9.166666666666666,
+          "entryHigh": 1325,
+          "exitLow": 1180
+        },
+        "loggedAt": "2026-11-13T00:15:29.278Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "ADAIDR",
+        "candleTime": 1794524400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794524400,
+          "close": 3185,
+          "ema": 3265.058393504908,
+          "atr": 23.75,
+          "entryHigh": 3425,
+          "exitLow": 3070
+        },
+        "loggedAt": "2026-11-13T00:15:29.507Z"
+      },
+      {
+        "t": 1794528917,
+        "pair": "BNBIDR",
+        "candleTime": 1794524400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794524400,
+          "close": 11925211,
+          "ema": 12456587.958683027,
+          "atr": 95040.58333333333,
+          "entryHigh": 12669006,
+          "exitLow": 11892402
+        },
+        "loggedAt": "2026-11-13T00:15:29.722Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "BTCIDR",
+        "candleTime": 1794549600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794549600,
+          "close": 1266052000,
+          "ema": 1354676134.8797235,
+          "atr": 10038666.666666666,
+          "entryHigh": 1379999000,
+          "exitLow": 1241001000
+        },
+        "loggedAt": "2026-11-13T07:53:05.600Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "ETHIDR",
+        "candleTime": 1794549600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794549600,
+          "close": 35500000,
+          "ema": 38684949.9445124,
+          "atr": 433833.3333333333,
+          "entryHigh": 40685000,
+          "exitLow": 34883000
+        },
+        "loggedAt": "2026-11-13T07:53:05.826Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "DOGEIDR",
+        "candleTime": 1794549600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794549600,
+          "close": 1181,
+          "ema": 1265.8503989463206,
+          "atr": 11.75,
+          "entryHigh": 1325,
+          "exitLow": 1156
+        },
+        "loggedAt": "2026-11-13T07:53:06.050Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "ADAIDR",
+        "candleTime": 1794549600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794549600,
+          "close": 3134,
+          "ema": 3255.6912043488724,
+          "atr": 31.291666666666668,
+          "entryHigh": 3425,
+          "exitLow": 3047
+        },
+        "loggedAt": "2026-11-13T07:53:06.274Z"
+      },
+      {
+        "t": 1794556373,
+        "pair": "BNBIDR",
+        "candleTime": 1794549600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794549600,
+          "close": 11616362,
+          "ema": 12407580.380204145,
+          "atr": 118970.29166666667,
+          "entryHigh": 12669006,
+          "exitLow": 11450000
+        },
+        "loggedAt": "2026-11-13T07:53:06.497Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "BTCIDR",
+        "candleTime": 1794582000,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794582000,
+          "close": 1255340000,
+          "ema": 1346708053.6084094,
+          "atr": 11281458.333333334,
+          "entryHigh": 1376808000,
+          "exitLow": 1241001000
+        },
+        "loggedAt": "2026-11-13T16:15:06.782Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "ETHIDR",
+        "candleTime": 1794582000,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794582000,
+          "close": 35279000,
+          "ema": 38418957.480094,
+          "atr": 469833.3333333333,
+          "entryHigh": 40685000,
+          "exitLow": 34883000
+        },
+        "loggedAt": "2026-11-13T16:15:07.014Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "DOGEIDR",
+        "candleTime": 1794582000,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794582000,
+          "close": 1188,
+          "ema": 1259.3947425488589,
+          "atr": 11.5,
+          "entryHigh": 1323,
+          "exitLow": 1156
+        },
+        "loggedAt": "2026-11-13T16:15:07.243Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "ADAIDR",
+        "candleTime": 1794582000,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794582000,
+          "close": 3137,
+          "ema": 3245.5731577868014,
+          "atr": 34.5,
+          "entryHigh": 3404,
+          "exitLow": 3047
+        },
+        "loggedAt": "2026-11-13T16:15:07.469Z"
+      },
+      {
+        "t": 1794586494,
+        "pair": "BNBIDR",
+        "candleTime": 1794582000,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794582000,
+          "close": 11599135,
+          "ema": 12342635.367672293,
+          "atr": 132410.83333333334,
+          "entryHigh": 12669006,
+          "exitLow": 11450000
+        },
+        "loggedAt": "2026-11-13T16:15:07.695Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "BTCIDR",
+        "candleTime": 1794603600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794603600,
+          "close": 1249999000,
+          "ema": 1341479010.9344995,
+          "atr": 11600958.333333334,
+          "entryHigh": 1376808000,
+          "exitLow": 1241001000
+        },
+        "loggedAt": "2026-11-13T22:34:02.029Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "ETHIDR",
+        "candleTime": 1794603600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794603600,
+          "close": 35225000,
+          "ema": 38244199.892795414,
+          "atr": 463375,
+          "entryHigh": 40685000,
+          "exitLow": 34860000
+        },
+        "loggedAt": "2026-11-13T22:34:02.249Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "DOGEIDR",
+        "candleTime": 1794603600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794603600,
+          "close": 1180,
+          "ema": 1255.431365427247,
+          "atr": 12.083333333333334,
+          "entryHigh": 1316,
+          "exitLow": 1156
+        },
+        "loggedAt": "2026-11-13T22:34:02.467Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "ADAIDR",
+        "candleTime": 1794603600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794603600,
+          "close": 3079,
+          "ema": 3238.300908555631,
+          "atr": 33.75,
+          "entryHigh": 3374,
+          "exitLow": 3047
+        },
+        "loggedAt": "2026-11-13T22:34:02.684Z"
+      },
+      {
+        "t": 1794609229,
+        "pair": "BNBIDR",
+        "candleTime": 1794603600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794603600,
+          "close": 11550670,
+          "ema": 12300680.022473104,
+          "atr": 140749.79166666666,
+          "entryHigh": 12669006,
+          "exitLow": 11450000
+        },
+        "loggedAt": "2026-11-13T22:34:02.901Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "BTCIDR",
+        "candleTime": 1794621600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794621600,
+          "close": 1237979000,
+          "ema": 1336835108.3227115,
+          "atr": 11586875,
+          "entryHigh": 1376808000,
+          "exitLow": 1241001000
+        },
+        "loggedAt": "2026-11-14T03:08:29.957Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "ETHIDR",
+        "candleTime": 1794621600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794621600,
+          "close": 34951000,
+          "ema": 38094745.10236956,
+          "atr": 498666.6666666667,
+          "entryHigh": 40665000,
+          "exitLow": 34860000
+        },
+        "loggedAt": "2026-11-14T03:08:30.186Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "DOGEIDR",
+        "candleTime": 1794621600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794621600,
+          "close": 1158,
+          "ema": 1251.3926900819388,
+          "atr": 13.291666666666666,
+          "entryHigh": 1313,
+          "exitLow": 1156
+        },
+        "loggedAt": "2026-11-14T03:08:30.410Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "ADAIDR",
+        "candleTime": 1794621600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794621600,
+          "close": 3024,
+          "ema": 3229.464234145286,
+          "atr": 34.708333333333336,
+          "entryHigh": 3347,
+          "exitLow": 3047
+        },
+        "loggedAt": "2026-11-14T03:08:30.634Z"
+      },
+      {
+        "t": 1794625697,
+        "pair": "BNBIDR",
+        "candleTime": 1794621600,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794621600,
+          "close": 11496902,
+          "ema": 12262426.635169478,
+          "atr": 140493.58333333334,
+          "entryHigh": 12669006,
+          "exitLow": 11450000
+        },
+        "loggedAt": "2026-11-14T03:08:30.858Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "BTCIDR",
+        "candleTime": 1794650400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794650400,
+          "close": 1237978000,
+          "ema": 1328750399.4198887,
+          "atr": 8777750,
+          "entryHigh": 1375000000,
+          "exitLow": 1222233000
+        },
+        "loggedAt": "2026-11-14T11:24:36.676Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "ETHIDR",
+        "candleTime": 1794650400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794650400,
+          "close": 34943000,
+          "ema": 37843887.782792315,
+          "atr": 329125,
+          "entryHigh": 40628000,
+          "exitLow": 34441000
+        },
+        "loggedAt": "2026-11-14T11:24:36.904Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "DOGEIDR",
+        "candleTime": 1794650400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794650400,
+          "close": 1152,
+          "ema": 1243.7073585244402,
+          "atr": 11.708333333333334,
+          "entryHigh": 1302,
+          "exitLow": 1135
+        },
+        "loggedAt": "2026-11-14T11:24:37.129Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "ADAIDR",
+        "candleTime": 1794650400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794650400,
+          "close": 2988,
+          "ema": 3211.706436139962,
+          "atr": 28.375,
+          "entryHigh": 3316,
+          "exitLow": 2975
+        },
+        "loggedAt": "2026-11-14T11:24:37.355Z"
+      },
+      {
+        "t": 1794655463,
+        "pair": "BNBIDR",
+        "candleTime": 1794650400,
+        "action": "HOLD",
+        "reason": "tidak ada breakout + tren",
+        "meta": {
+          "strategy": "crypto-donchian-1.0.0",
+          "candleTime": 1794650400,
+          "close": 11384172,
+          "ema": 12191116.593135294,
+          "atr": 127173.125,
+          "entryHigh": 12669006,
+          "exitLow": 11250228
+        },
+        "loggedAt": "2026-11-14T11:24:37.580Z"
+      }
+    ]
+  },
+  "counts": {
+    "tick": 19,
+    "order": 0,
+    "equity": 19,
+    "error": 0,
+    "snapshot": 95,
+    "signal": 85
+  }
+}

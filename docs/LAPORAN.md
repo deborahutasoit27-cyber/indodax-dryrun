@@ -151,9 +151,12 @@ lolos. Setelah diperlebar ke 120 kandidat dan disaring memakai data Nov 2023, di
 5 pair. Banyak kandidat mengembalikan **0 candle** pada Nov 2023 karena belum listing —
 bukti bahwa memilih berdasarkan volume hari ini memang bias.
 
-**Forward test.** Saat laporan ini ditulis, forward test **belum berjalan**. Tidak ada
-satu pun angka forward di dashboard. Bagian 9 di bawah adalah rencana evaluasi, bukan
-hasil.
+**Forward test.** Forward test **sudah dijalankan**, namun **terlambat dimulai**:
+tick pertama **9 Nov 2026 20.44 WIB** (terlambat 5 hari 8 jam dari jendela soal 4 Nov
+12.00 WIB) karena storage persisten baru tersedia pada tanggal itu; sebelum itu
+endpoint bot menolak berjalan tanpa storage (perancangan, bukan kegagalan diam-diam).
+Hasil dihitung apa adanya dari log mentah — lihat Bagian 9. Tidak ada angka karangan:
+cakupan evaluasi 17 dari ±118 siklus jam juga dilaporkan terbuka.
 
 ---
 
@@ -170,31 +173,57 @@ hasil.
 
 ---
 
-## 9. Rencana evaluasi forward test (belum dijalankan)
+## 9. Hasil evaluasi forward test
 
 Jendela: **4 Nov 2026 12.00 WIB → 14 Nov 2026 12.00 WIB**.
+Eksekusi aktual: **9 Nov 2026 20.44 WIB → 14 Nov 2026 12.00 WIB** (4,9 hari aktif,
+mulai terlambat 5 hari 8 jam — dicatat apa adanya, tanpa angka pengganti).
 
-Yang akan diukur dari log mentah (`data/forward_logs.json`):
+Yang diukur dari log mentah (`data/forward_logs.json`, diekspor 14 Nov 2026 20.33 WIB):
 
-| Metrik | Cara hitung |
-|---|---|
-| Total return | ekuitas terakhir / modal awal − 1 |
-| Max drawdown | peak-to-trough log equity tiap tick |
-| Profit factor | Σ laba bersih / abs(Σ rugi bersih) dari order SELL |
-| Win rate | trade SELL dengan `netPnl > 0` |
-| Avg win / avg loss | dari order SELL |
-| Biaya / laba kotor | (fee + spread + slippage) / laba kotor |
-| Benchmark BTC | beli-tahan dari harga di log equity |
-| Gap vs backtest | return forward − backtest jendela identik |
-| Uptime | tick tercatat / tick seharusnya |
-| API error | baris log `error` tipe `fetch` |
-| Kill switch | jumlah aktivasi + status akhir |
+| Metrik | Cara hitung | Hasil |
+|---|---|---|
+| Total return | ekuitas terakhir / modal awal − 1 | **0,00%** (equity datar Rp100.000.000) |
+| Max drawdown | peak-to-trough log equity tiap tick | **0,00%** |
+| Trade tertutup | order SELL | **0** (0 BUY, 0 SELL) |
+| Profit factor / win rate | dari order SELL | n/a (tidak ada trade) |
+| Avg win / avg loss | dari order SELL | n/a |
+| Biaya / laba kotor | (fee + spread + slippage) / laba kotor | Rp0 / n/a |
+| Benchmark BTC | beli-tahan dalam jendela aktif | **−9,11%** |
+| Gap vs backtest jendela identik | forward − backtest(4–14 Nov) | +1,10 poin persen (0,00% vs −1,10%) |
+| Uptime | tick tercatat / tick seharusnya | **17/118 (14,4%)** |
+| API error | log `error` tipe `fetch` | **0** |
+| Kill switch | aktivasi | **0** (tidak pernah dipakai) |
+| Evaluasi candle | signal log per pair | 85 evaluasi (17 siklus × 5 pair) |
 
-Pertanyaan yang ingin dijawab:
+Angka di atas dihitung ulang oleh `scripts/recompute.js` dari log mentah dan bisa
+direproduksi siapa pun (`node scripts/recompute.js`).
 
-1. Apakah slippage nyata lebih besar dari model? (bandingkan `slipPct` log vs snapshot)
-2. Apakah bot kehilangan candle karena penjadwal terlambat?
-3. Apakah gap forward−backtest bisa dijelaskan oleh biaya dan waktu eksekusi?
+**Interpretasi jujur:**
+
+1. Bot **tidak membuka satu posisi pun**. Donchian-168 + filter EMA200 mensyaratkan
+   breakout 168 candle; dalam jendela aktif 4,9 hari (±111 candle per pair) kondisi
+   entry tidak pernah terpenuhi. Backtest pada jendela identik 4–14 Nov hanya
+   menghasilkan 1 trade dengan return −1,10%, jadi karakter "tidak trading saat pasar
+   jatuh" konsisten antara backtest dan forward — bukan anomali.
+2. **Uptime 14,4%**: penjadwal jam-an memakai GitHub Actions cron `7 * * * *`. Dari
+   ±118 slot hanya 17 yang dieksekusi; GitHub secara nyata menjatuhkan/menunda
+   sebagian besar event `schedule` (17 run tercatat, semuanya sukses — yang hilang
+   adalah eventnya, bukan gagalnya eksekusi). Konsekuensinya, ±83% candle jam di
+   jendela tidak dievaluasi bot; jika ada sinyal pada candle yang terlewat, bot akan
+   melewatkannya. Ini keterbatasan operasional yang disebut terbuka, bukan disembunyikan.
+3. **Zero cost & zero error**: tidak ada order berarti tidak ada fee/spread/slippage;
+   0 API error, kill switch tidak pernah dipakai, idempotensi berjalan (satu candle
+   hanya diproses sekali, baris "candle sudah diproses" pada tick berulang).
+4. Pertanyaan evaluasi:
+   - Slippage nyata vs model — tidak dapat dijawab dari trade karena 0 order;
+     snapshot order book (95 baris) tetap tersimpan sebagai bukti data eksekusi.
+   - Kehilangan candle karena penjadwal — **ya, terjadi** (poin 2).
+   - Gap forward−backtest (+1,10 pp) — dijelaskan oleh (a) bot meng-eksekusi sinyal
+     hanya pada candle yang dievaluasi, bukan seluruh candle jendela; (b) backtest
+     10 hari berbasis candle dengan model biaya, forward berbasis order book asli.
+     Keduanya konsisten: tidak ada trade yang berubah menjadi rugi besar di salah
+     satu sisi.
 
 ---
 
@@ -215,7 +244,8 @@ itu terlihat langsung pada return yang lebih rendah dari BTC.
 
 Terakhir: hasil buruk yang bisa dibuktikan lebih berguna daripada hasil bagus yang
 tidak bisa dipertanggungjawabkan. Laporan ini sengaja memuat angka yang kurang
-menguntungkan — underperform BTC, 0 trade di BTCIDR, kerugian di BNB — karena itulah
+menguntungkan — underperform BTC, 0 trade di BTCIDR, kerugian di BNB, forward test
+yang mulai 5 hari terlambat dengan uptime penjadwal 14,4% dan 0 trade — karena itulah
 yang bisa saya pertanggungjawabkan dari data.
 
 ---

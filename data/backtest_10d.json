@@ -1,0 +1,272 @@
+{
+  "generatedAt": "2026-11-14T13:35:47.297Z",
+  "tag": "10d",
+  "strategy": {
+    "version": "crypto-donchian-1.0.0",
+    "timeframe": "60",
+    "entryLookback": 168,
+    "exitLookback": 48,
+    "trendEma": 200,
+    "atrPeriod": 24,
+    "atrMult": 2.5,
+    "maxPositions": 4,
+    "positionPct": 0.25,
+    "maxOrderPctOfCandle": 0.01,
+    "dailyLossLimitPct": 3,
+    "minOrderIdr": 25000,
+    "takerFeePct": 0.3,
+    "maxSpreadPct": 2,
+    "maxCandleAgeMult": 2,
+    "maxHoldBars": 720
+  },
+  "window": {
+    "from": "2026-11-04T05:00:00.000Z",
+    "to": "2026-11-14T05:00:00.000Z",
+    "fromWib": "2026-11-04 12:00:00",
+    "toWib": "2026-11-14 12:00:00",
+    "days": 10
+  },
+  "universe": [
+    {
+      "symbol": "BTCIDR",
+      "medianHourlyIdrAtStart": 631713088
+    },
+    {
+      "symbol": "ETHIDR",
+      "medianHourlyIdrAtStart": 214548623
+    },
+    {
+      "symbol": "DOGEIDR",
+      "medianHourlyIdrAtStart": 121351243
+    },
+    {
+      "symbol": "ADAIDR",
+      "medianHourlyIdrAtStart": 74838588
+    },
+    {
+      "symbol": "BNBIDR",
+      "medianHourlyIdrAtStart": 39222583
+    }
+  ],
+  "costModel": {
+    "BTCIDR": {
+      "halfSpreadPct": 0.00003614008039722285,
+      "buySlipPct": 0.00003614008039722285,
+      "sellSlipPct": 0.00003614008039722285,
+      "buyCostPct": 0.0000722801607944457,
+      "sellCostPct": 0.0000722801607944457,
+      "snapshots": 20
+    },
+    "ETHIDR": {
+      "halfSpreadPct": 0.0184591758319868,
+      "buySlipPct": 0.0184591758319868,
+      "sellSlipPct": 0.08992651036704416,
+      "buyCostPct": 0.0369183516639736,
+      "sellCostPct": 0.10838568619903097,
+      "snapshots": 20
+    },
+    "DOGEIDR": {
+      "halfSpreadPct": 0.03769317753486619,
+      "buySlipPct": 0.03769317753486619,
+      "sellSlipPct": 0.18776599317552534,
+      "buyCostPct": 0.07538635506973237,
+      "sellCostPct": 0.2254591707103915,
+      "snapshots": 20
+    },
+    "ADAIDR": {
+      "halfSpreadPct": 0.10436857015058894,
+      "buySlipPct": 0.10436857015058894,
+      "sellSlipPct": 0.2330441394495714,
+      "buyCostPct": 0.20873714030117788,
+      "sellCostPct": 0.33741270960016034,
+      "snapshots": 20
+    },
+    "BNBIDR": {
+      "halfSpreadPct": 0.3543752821813776,
+      "buySlipPct": 0.35439109611154596,
+      "sellSlipPct": 0.3543853566603731,
+      "buyCostPct": 0.7087663782929235,
+      "sellCostPct": 0.7087606388417507,
+      "snapshots": 20
+    }
+  },
+  "feePct": 0.3,
+  "metrics": {
+    "startEquity": 100000000,
+    "endEquity": 98904465.67644241,
+    "totalReturnPct": -1.0955343235575898,
+    "cagrPct": -33.125463369601114,
+    "maxDrawdownPct": -1.214303959067664,
+    "maxDrawdownAt": "2026-11-05",
+    "maxDrawdownHourlyPct": -1.2182504841574349,
+    "maxDrawdownHourlyAt": "2026-11-05 20:00:00",
+    "sharpe": -6.041522986797286,
+    "days": 10,
+    "trades": 1,
+    "winRatePct": 0,
+    "profitFactor": 0,
+    "avgWin": 0,
+    "avgLoss": -1095534.32355759,
+    "avgTradePct": -2.4977306867505398,
+    "avgBarsHeld": 21,
+    "entriesBlockedDays": 0,
+    "costs": {
+      "fees": 260662.50565401168,
+      "spread": 16038.716748912184,
+      "slippage": 46788.47725192804,
+      "total": 323489.6996548519
+    },
+    "grossProfitPositive": 0,
+    "costSharePct": null
+  },
+  "benchmark": {
+    "pair": "BTCIDR",
+    "totalReturnPct": -12.553211547029107,
+    "cagrPct": -99.25493417316758,
+    "maxDrawdownPct": -16.274484764011376,
+    "buyPrice": 1401230012.8105743,
+    "note": "Beli di open candle pertama jendela, tahan sampai akhir, biaya beli/jual terukur."
+  },
+  "trades": [
+    {
+      "pair": "ETHIDR",
+      "entryTime": "2026-11-04 23:00:00",
+      "entryCandle": 1793808000,
+      "exitTime": "2026-11-05 20:00:00",
+      "exitCandle": 1793883600,
+      "qty": 1,
+      "entryPrice": 43861186.85128707,
+      "exitPrice": 43026315.03338349,
+      "entryNotional": 43861186.85128707,
+      "exitNotional": 43026315.03338349,
+      "entryFee": 131583.5605538612,
+      "exitFee": 129078.94510015046,
+      "grossPnl": -834871.8179035783,
+      "netPnl": -1095534.32355759,
+      "returnPct": -2.4977306867505398,
+      "barsHeld": 21,
+      "entryReason": "Close 43842000 > High 168 bar (43299000) dan > EMA200 (41604868.35)",
+      "exitReason": "Close 43099000 < trailing stop ATR 2.5x (43321750.00)",
+      "spreadCost": 16038.716748912184,
+      "slipCost": 46788.47725192804
+    }
+  ],
+  "daily": [
+    {
+      "d": "2026-11-04",
+      "equity": 100120229.58815907,
+      "cash": 56007229.58815907,
+      "positions": 1,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-05",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-06",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-07",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-08",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-09",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-10",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-11",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-12",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-13",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    },
+    {
+      "d": "2026-11-14",
+      "equity": 98904465.67644241,
+      "cash": 98904465.67644241,
+      "positions": 0,
+      "blocked": false
+    }
+  ],
+  "monthly": [
+    {
+      "m": "2026-11",
+      "retPct": -1.214303959067664
+    }
+  ],
+  "dataQuality": {
+    "BTCIDR": {
+      "bars": 26548,
+      "first": "2023-11-04T10:00:00.000Z",
+      "last": "2026-11-14T13:00:00.000Z"
+    },
+    "ETHIDR": {
+      "bars": 26548,
+      "first": "2023-11-04T10:00:00.000Z",
+      "last": "2026-11-14T13:00:00.000Z"
+    },
+    "DOGEIDR": {
+      "bars": 26548,
+      "first": "2023-11-04T10:00:00.000Z",
+      "last": "2026-11-14T13:00:00.000Z"
+    },
+    "ADAIDR": {
+      "bars": 26548,
+      "first": "2023-11-04T10:00:00.000Z",
+      "last": "2026-11-14T13:00:00.000Z"
+    },
+    "BNBIDR": {
+      "bars": 26548,
+      "first": "2023-11-04T10:00:00.000Z",
+      "last": "2026-11-14T13:00:00.000Z"
+    }
+  },
+  "notes": [
+    "Sinyal memakai lib/strategy.js yang sama dengan bot.",
+    "Eksekusi di open candle berikutnya dengan spread/2 + slippage terukur; fee taker 0.3%.",
+    "Tidak ada fill di mid atau close.",
+    "Daily loss limit dihitung pada batas hari 00.00 WIB."
+  ]
+}
